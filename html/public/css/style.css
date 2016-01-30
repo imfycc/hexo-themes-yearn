@@ -14,24 +14,46 @@ li{
 .clear{
 	clear:both;
 }
+.left{
+	float:left;
+}
+.main{
+	width:800px;
+}
 .left-aside{
-	width:18%;
+	width: 256px;
+	background-color: #fff;
 	position: fixed;
     top: 0;
     bottom: 0;
-    padding: 80px 30px;
-    overflow: auto;
+    padding: 50px 30px 80px;
     border-right: 1px solid #d9d9d9;
     box-shadow: -1px 1px 6px rgba(0,0,0,0.35);
    
 }
+.left-aside {
+	text-align: center;
+}
+.left-aside h2{
+	margin:14px 0 50px;
+}
 .left-aside .face-img img{
 	border-radius: 50%;
-	height:160px;
-	width:160px;
+	height:150px;
+	width:150px;
+}
+.sns{
+	margin-top:40px;
+}
+.sns li img{
+	width:31px;
+}
+.sns li{
+	float:left;
+	margin:60px 10px 20px;
 }
 .right-aside{
-	margin-left:22.3%;
+	margin-left:318px;
 }
 .right-aside .right-nav{
 	padding-left: 30px;
@@ -44,16 +66,28 @@ li{
 }
 .right-aside .right-nav li{
 	float:left;
-	padding:8px 15px;
+	padding:8px 17px;
 }
 .right-aside .right-nav li a{
 	color:#009800;
-	font-size:16px;
+	font-size:18px;
 	font-weight: bold;
 }
+.input-search{
+	float:right;
+	margin:8px 78px 0  0;
+	border-radius: 2em;
+	padding:7px;
+	border: 1px solid #cccccc;
+}
+input:focus{
+	outline: none;
+
+}
 .right-main{
-	margin-top:58px;
+	margin-top: 58px;
 	padding-left: 40px;
+	float:left;
 }
 .category li{
    float:left;
@@ -96,3 +130,7 @@ li{
 	background-color: #6bd95b;
 	color:#fff;
 }
+/*.aside{
+    margin-top: 60px;
+    padding:40px 0 20px 0;
+}*/
