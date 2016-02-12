@@ -1,4 +1,5 @@
 > VicSugar 是我根据自己的浏览习惯打造的一款主题，设计灵感来自于[简书](http://www.jianshu.com/)、[云龙博客](http://yunlzheng.github.io/)等众多网站。我希望VicSugar具备这样的特点简洁、炫酷、有阅读感。VicSugar作为我的网站主题，我会经常优化它，把学习到的一些新技术运用到这个主题上。
+
 ### 预览地址：[胡方运的博客](http://hufangyun.com)
 
 ### 下载地址：[Github](https://github.com/Youthink/VicSugar)
