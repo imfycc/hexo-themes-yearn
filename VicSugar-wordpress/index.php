@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />   
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="baidu_union_verify" content="4a0e189d6aa33c77bf2c7a8fce617ff2"><!--联盟-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="keywords" content="胡方运,程小猿,前端,个人博客,Youthink,Web" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?> ">
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/public/img/favicon.ico" title="Favicon">	
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/public/css/font-awesome.min.css">
 	<title><?php bloginfo('name'); ?></title>
+	<!-- 百度检测-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?ae46047b557574a12bba544bea130043";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 </head>
 <body>
 	<div class="left-aside">
@@ -50,13 +65,13 @@
 				<?php wp_nav_menu(array('theme_location' => 'main', 'container' => false, 'container_class' => false)); ?>
 			</ul>
 			<input type="search"  placeholder="搜索" class="input-search">
+			<div class="login"><a href="<?php echo home_url();?>/wp-admin"><i class="icon-user"></i></a></div>
 		 </div>
 	    </div>
 		<div class="right-main">
 			<div class="main">
 				<div class="category">
 					<ul>
-						<li><a href="http://hufangyun.com" class="active">最新</a></li>
 						<?php wp_nav_menu(array('menu'=>'tabNav', 'container' => false, 'container_class' => false)); ?>
 					</ul>
 				</div>

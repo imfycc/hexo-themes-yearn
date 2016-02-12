@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 Theme Name: VicSugar
 Theme URI: http://hufangyun.com
@@ -142,6 +143,15 @@ input:focus{
 	background-color: #6bd95b;
 	color:#fff;
 }
+.login{
+	position: absolute;
+    top: 10px;
+    right: 137px;
+   
+}
+.login a{
+	 color: #717171;
+}
 
 
 /***************** pages ************************/
@@ -240,7 +250,7 @@ input:focus{
     padding: 25px;
     margin-bottom: 40px;
     background-color: whitesmoke;
-    border-left: 4px solid #f57e42;
+    border-left: 4px solid #49be38;
     box-sizing: border-box;
     box-shadow: 0 0 1px #d9d9d9;
     margin:50px auto;
@@ -253,8 +263,8 @@ input:focus{
 .support-author .btn-pay {
     margin: 10px 15px 10px 0;
     color: white;
-    border-color: #f57e42;
-    background-color: #f57e42;
+    border-color: #49be38;
+    background-color: #49be38;
     border-radius: 4px;
     padding: 4px 12px;
     font-size: 14px;
@@ -262,7 +272,7 @@ input:focus{
     text-align: center;
 }
 .support-author .btn-pay:hover{
-	 background-color: #49be38;
+	 background-color: #f57e42;
 }
 .like {
     width: 163px;
