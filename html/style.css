@@ -319,3 +319,14 @@ input:focus{
 	padding:80px 0 10px;
 	line-height: 38px;
 }
+
+/************** page *******************/
+
+.container .center{
+	text-align: center;
+	margin-top:30px;
+}
+.container .f{
+   	float:left;
+   	margin:60px;
+}
