@@ -57,6 +57,23 @@ h1,h2,h3,h4,h5{
 	height:150px;
 	width:150px;
 }
+.left-aside .face-img img{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    transition:All ease-in-out 0.4s;
+    -webkit-transition:All ease-in-out 0.4s;
+    -o-transition:All ease-in-out 0.4s;
+    -moz-transition:All ease-in-out 0.4s;
+    -ms-transition:All ease-in-out 0.4s;
+}
+.left-aside .face-img img:hover{
+    transform:translate(0px,-10px);
+    -webkit-transform:translate(0px,-10px);
+    -moz-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
+}
 .sns{
 	margin-top:40px;
 }
@@ -250,6 +267,10 @@ input:focus{
     text-align: justify;
 
 }
+
+.content blockquote p{
+    margin-bottom:0;
+}
 .article img {
     max-width: 700px;
     margin: 8px auto 8px;
@@ -278,6 +299,9 @@ input:focus{
     border-radius: 2%;
     color:#657b83;
 }
+code{
+    white-space: normal;
+} /*英文字符串自动换行*/
 .support-author .btn-pay {
     margin: 10px 15px 10px 0;
     color: white;

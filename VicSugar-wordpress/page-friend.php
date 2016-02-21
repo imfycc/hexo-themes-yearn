@@ -27,16 +27,16 @@ Template Name: 友情链接 模板
 	</script>
 </head>
 <body>
-		<div class="header">
-			<i class="icon-reorder"></i>
-			<h1><a href="index.html">胡方运的博客</a></h1>
-			<div class="face">
-				<a href="">
-					<i class="icon-user"></i>
-				</a>
-			</div>
+	<div class="header">
+		<i class="icon-reorder"></i>
+		<h1><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></h1>
+		<div class="face">
+			<a href="<?php echo home_url();?>/wp-admin">
+				<i class="icon-user"></i>
+			</a>
 		</div>
-		<div class="container">
+	</div>
+	<div class="container">
 				<h1 class="title center">
 				  <?php the_title();?>
 				</h1>
