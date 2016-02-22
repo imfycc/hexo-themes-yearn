@@ -28,43 +28,49 @@
 			<p>天马行空，爱生活，爱coding</p>
 			<p>The value of life by their own decisions</p>
 		</div>
-		<div class="sns">
-			<ul>
-				<li>
-					<a href="http://music.163.com/#/user/home?id=30828384" target="_blank">
-					   <img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-netease-music.svg" alt="网易云音乐" title="网易云音乐">
-				    </a>
-				</li>
-				<li>
-					<a href="">
-						<img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-qq.svg" alt="898843651" title="QQ:898843651">
-					</a>
-				</li>
-				<li>
-					<a href="http://youthol.cn" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/public/img/Youthol.svg" alt="青春在线" title="青春在线" >
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-appicon06.svg" alt="邮箱" title="hufy3651@foxmail.com">
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/Youthink" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-github.svg" alt="GitHub" title="GitHub">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+	    <div class="sns">
+            <ul>
+                <li>
+                    <a href="http://music.163.com/#/user/home?id=30828384" target="_blank">
+                       <img src="public/img/iconfont-netease-music.svg" alt="网易云音乐" data-tooltip="网易云音乐">
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="public/img/iconfont-qq.svg" alt="898843651" data-tooltip="QQ:898843651">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://youthol.cn" target="_blank">
+                        <img src="public/img/Youthol.svg" alt="青春在线" data-tooltip="青春在线" >
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="public/img/iconfont-appicon06.svg" alt="邮箱" data-tooltip="hi@hufangyun.com">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Youthink" target="_blank">
+                        <img src="public/img/iconfont-github.svg" alt="GitHub" data-tooltip="GitHub">
+                    </a>
+                </li>
+            </ul>
+            <div class="tip">
+                <p></p><span></span>
+            </div>
+        </div>
+    </div>
 	<div class="right-aside">
 		<div class="right-nav">
 		   <div class="main">
 			<ul class="left">
 				<?php wp_nav_menu(array('theme_location' => 'main', 'container' => false, 'container_class' => false)); ?>
 			</ul>
-			<input type="search"  placeholder="搜索" class="input-search">
+			<div class="search">
+                <input type="search"  class="input-search" placeholder="搜索">
+                <i class="icon-search"></i>
+            </div>
 			<div class="login"><a href="<?php echo home_url();?>/wp-admin"><i class="icon-user"></i></a></div>
 		 </div>
 	    </div>
@@ -101,5 +107,7 @@
 		    </div>
 		</div>
 	</div>
+	<script src="public/js/jquery-1.8.3.min.js"></script>
+    <script src="public/js/MyJs.js"></script>
 </body>
 </html>

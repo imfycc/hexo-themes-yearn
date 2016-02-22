@@ -75,14 +75,56 @@ h1,h2,h3,h4,h5{
     -ms-transform:translate(0,-10px);
 }
 .sns{
-	margin-top:40px;
+    margin-top:40px;
+    position:absolute;
 }
 .sns li img{
-	width:31px;
+    width:31px;
+    transition:All ease-in-out 0.4s;
+    -webkit-transition:All ease-in-out 0.4s;
+    -o-transition:All ease-in-out 0.4s;
+    -moz-transition:All ease-in-out 0.4s;
+    -ms-transition:All ease-in-out 0.4s;
+}
+.sns li img:hover{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
 }
 .sns li{
-	float:left;
-	margin:60px 10px 20px;
+    float:left;
+    margin:60px 10px 20px;
+}
+.sns .tip{
+    padding: 0 14px;
+    position: absolute;
+    background-color: #2DCB70;
+    opacity: 0;
+    border-radius: 7%;
+    top: 105px;
+    height: 35px;
+    line-height: 35px;
+    color:#3D3D3D;
+    font-weight: bold;
+    white-space:nowrap;
+
+    transition:All ease-in-out 0.4s;
+    -webkit-transition:All ease-in-out 0.4s;
+    -o-transition:All ease-in-out 0.4s;
+    -moz-transition:All ease-in-out 0.4s;
+    -ms-transition:All ease-in-out 0.4s;
+}
+.sns .tip span{
+    position: absolute;
+    width:0px;height:0px;
+    display: block;
+    top:-14px;
+    left:50%;
+    margin-left:-6px;
+    border:7px solid transparent;
+    border-bottom-color:#2DCB70;
 }
 .right-aside{
 	margin-left:318px;
@@ -100,21 +142,36 @@ h1,h2,h3,h4,h5{
 	float:left;
 	padding:8px 17px;
 }
+.right-aside .right-nav li:hover{
+    border-bottom:2px solid #6666FF;
+    padding:8px 17px 6px 17px;
+}
 .right-aside .right-nav li a{
-	color:#009800;
-	font-size:18px;
-	font-weight: bold;
+    color:#009800;
+    font-size:18px;
+    font-weight: bold;
+}
+.search{
+    float:right;
+    color:#717171;
 }
 .input-search{
-	float:right;
-	margin:8px 78px 0  0;
-	border-radius: 2em;
-	padding:7px;
-	border: 1px solid #cccccc;
+    margin:8px -31px 0  0;
+    border-radius: 2em;
+    padding:7px;
+    border: 1px solid #cccccc;
 }
 input:focus{
-	outline: none;
+    outline: none;
+}
+.login{
+    position: absolute;
+    top: 10px;
+    right: 137px;
 
+}
+.login a{
+    color: #717171;
 }
 .right-main{
 	margin-top: 58px;
@@ -151,7 +208,9 @@ input:focus{
     font-weight: bold;
     line-height: 1.5;
 }
-
+.item .title a:hover{
+    color:#000;
+}
 .info li{ 
 	float:left;
 	margin:8px 8px 8px 0px;
@@ -161,15 +220,6 @@ input:focus{
 .current-menu-item a{
 	background-color: #6bd95b;
 	color:#fff;
-}
-.login{
-	position: absolute;
-    top: 10px;
-    right: 137px;
-   
-}
-.login a{
-	 color: #717171;
 }
 
 
