@@ -32,27 +32,27 @@
             <ul>
                 <li>
                     <a href="http://music.163.com/#/user/home?id=30828384" target="_blank">
-                       <img src="public/img/iconfont-netease-music.svg" alt="网易云音乐" data-tooltip="网易云音乐">
+                       <img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-netease-music.svg" alt="网易云音乐" data-tooltip="网易云音乐">
                     </a>
                 </li>
                 <li>
                     <a>
-                        <img src="public/img/iconfont-qq.svg" alt="898843651" data-tooltip="QQ:898843651">
+                        <img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-qq.svg" alt="898843651" data-tooltip="QQ:898843651">
                     </a>
                 </li>
                 <li>
                     <a href="http://youthol.cn" target="_blank">
-                        <img src="public/img/Youthol.svg" alt="青春在线" data-tooltip="青春在线" >
+                        <img src="<?php bloginfo('template_directory'); ?>/public/img/Youthol.svg" alt="青春在线" data-tooltip="青春在线" >
                     </a>
                 </li>
                 <li>
                     <a>
-                        <img src="public/img/iconfont-appicon06.svg" alt="邮箱" data-tooltip="hi@hufangyun.com">
+                        <img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-appicon06.svg" alt="邮箱" data-tooltip="hi@hufangyun.com">
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/Youthink" target="_blank">
-                        <img src="public/img/iconfont-github.svg" alt="GitHub" data-tooltip="GitHub">
+                        <img src="<?php bloginfo('template_directory'); ?>/public/img/iconfont-github.svg" alt="GitHub" data-tooltip="GitHub">
                     </a>
                 </li>
             </ul>
@@ -107,7 +107,7 @@
 		    </div>
 		</div>
 	</div>
-	<script src="public/js/jquery-1.8.3.min.js"></script>
-    <script src="public/js/MyJs.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/public/js/jquery-1.8.3.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/public/js/MyJs.js"></script>
 </body>
 </html>
