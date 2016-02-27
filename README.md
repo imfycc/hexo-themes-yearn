@@ -4,9 +4,9 @@
 
 ### 下载地址：[Github](https://github.com/Youthink/VicSugar)
 
-> wordpress主题的制作以及主题各种前端效果的实现请参考WIKi
+### WIKI地址：[Github wiki](https://github.com/Youthink/VicSugar/wiki)
 
-### [主题WIKI](https://github.com/Youthink/VicSugar/wiki)
+wordpress主题的制作以及主题各种前端效果的实现请参考WIKi
 
 
 
