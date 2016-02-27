@@ -94,7 +94,7 @@
 						<ul>
 							<li><?php the_time('Y/m/d'); ?></li>
 							<li>喜欢 3</li>
-							<li>评论 6</li>
+							<li>评论 <?php echo zfunc_comments_users($post->ID); ?></li>
 							<li>阅读 <?php echo getPostViews(get_the_ID()); ?></li>
 						</ul>
 					</div>

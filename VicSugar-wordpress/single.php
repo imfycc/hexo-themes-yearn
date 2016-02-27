@@ -37,9 +37,10 @@
 				<?php the_title(); ?>
 			</h1>
 			<ul class="article-info">   
-				<li>字数 2325</li>
+				 <?php if ( is_user_logged_in() ) { ?>
+                <li><?php edit_post_link('编辑'); ?></li> <?php }?>
 				<li>阅读 <?php echo getPostViews(get_the_ID()); ?></li>
-				<li>评论 104</li>
+				<li>评论 <?php echo zfunc_comments_users($post->ID); ?></li>
 				<li>喜欢 245</li>
 			</ul>
 			<div class="clear"></div>
