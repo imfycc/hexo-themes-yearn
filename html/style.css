@@ -185,6 +185,10 @@ input:focus{
     font-weight: normal;
     line-height: 1.5;
 }
+
+.category li a:hover {
+	border: 1px solid #6bd95b;
+}
 .list{
 	float:left;
 	margin-top: 15px;
