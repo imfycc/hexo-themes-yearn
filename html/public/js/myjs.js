@@ -13,3 +13,13 @@ $(function(){
         $(".tip").css('opacity',0);
     });
 });
+
+/*搜索框 聚焦伸长效果*/
+
+$(document).ready(function(){
+  $(".input-search").focus(function(){
+    $(this).animate({width:'200px'});  
+  }).blur(function(){
+              $(this).animate({width:'120px'});
+        });
+});

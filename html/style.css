@@ -153,6 +153,7 @@ li{
 	border-radius: 2em;
 	padding:7px;
 	border: 1px solid #cccccc;
+	width:120px;
 }
 input:focus{
 	outline: none;
