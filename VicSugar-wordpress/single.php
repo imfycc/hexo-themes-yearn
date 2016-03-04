@@ -41,7 +41,6 @@
                 <li><?php edit_post_link('编辑'); ?></li> <?php }?>
 				<li>阅读 <?php echo getPostViews(get_the_ID()); ?></li>
 				<li>评论 <?php echo zfunc_comments_users($post->ID); ?></li>
-				<li>喜欢 245</li>
 			</ul>
 			<div class="clear"></div>
 			<div class="content">
@@ -55,13 +54,13 @@
                  <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
                  <a class="btn-pay"  href="#pay-modal">¥ 打赏支持</a>
 		    </div>
-		    <div class="like ">
+		    <!--<div class="like ">
                  <div class="like-button">
                     <a id="like-note" href="">
                     	<i class="icon-heart"></i>  喜欢</a>
                  </div>          
                  <span id="likes-count">256</span>        
-            </div>
+            </div>-->
             <div class="comment">
             	<?php comments_template(); ?>
             </div>
