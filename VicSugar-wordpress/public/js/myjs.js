@@ -23,3 +23,21 @@ $(document).ready(function(){
               $(this).animate({width:'120px'});
         });
 });
+
+$(document).ready(function(){
+    $('.leftAside').hover(function(){
+        $('.leftAside .icon-reorder').hide();
+        $(this).animate({width:'300px'});
+        $('.hoverShow').css('display','block');
+    },function(){
+        $(this).animate({width:'60px'});
+        $('.leftAside .icon-reorder').show();
+        $('.hoverShow').css('display','none');
+    });
+});
+
+$(document).ready(function(){
+    $('.box').click(function(){
+        $(this).children('.text').slideToggle().parents('.box').siblings('.box').children('.text').hide();
+    })
+});

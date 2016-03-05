@@ -436,6 +436,7 @@ code{
     bottom:0px;
     background-color:#EFEFEF;
     padding-top:30px;
+    overflow-y:auto;
 }
 .leftAside .icon{
     font-size:21px;
