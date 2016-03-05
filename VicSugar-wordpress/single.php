@@ -21,15 +21,31 @@
 	</script>
 </head>
 <body>
-	<div class="header">
-		<i class="icon-reorder"></i>
-		<h1><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></h1>
-		<div class="face">
-			<a href="<?php echo home_url();?>/wp-admin">
-				<i class="icon-user"></i>
-			</a>
-		</div>
-	</div>
+	<div class="leftAside">
+    		<div class="icon">
+    		    <i class="icon-reorder"></i>
+    		</div>
+    		<div class="hoverShow">
+    			<div class="nav">
+    				<ul>
+    					<li><i class="icon-home"></i> <a href="http://hufangyun.com">首页</a></li>
+    					<li><i class="icon-user"></i> <a href="http://hufangyun.com/wp-admin/">管理</a></li>
+    					<li><i class="icon-star"></i> <a href="http://hufangyun.com/?page_id=792">友链</a></li>
+    				</ul>
+    			</div>
+    			<div class="titleList">
+    				<ul>
+    					<li>
+    						<i class="icon-folder-open"></i> 文章归档
+    						<ul class="archive">
+    							<?php wp_get_archives('type=postbypost&format=html&show_post_count=true'); ?>
+    						</ul>
+    					</li>
+    					<li><i class="icon-tags"></i> 标签</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
 	<div class="container">
 		<div class="article">
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
@@ -72,5 +88,7 @@
 			<p>&copy;2016 胡方运的博客 鲁ICP备15009509号</p>
 		</div>
 	</div>
+	<script src="<?php bloginfo('template_directory'); ?>/public/js/jquery-1.8.3.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/public/js/MyJs.js"></script>
 </body>
 </html>

@@ -409,7 +409,7 @@ code{
 	border-bottom: 1px solid #eeeeee;
 }
 .footer{
-	background-color:whitesmoke;
+	background-color:#EFEFEF;
 	border-top: 1px solid #d9d9d9;
 	margin:10px auto 0;
 	text-align: center;
@@ -427,4 +427,28 @@ code{
 .container .f{
     float:left;
     margin:30px 60px;
+}
+
+.leftAside{
+    width:60px;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    background-color:#EFEFEF;
+    padding-top:30px;
+}
+.leftAside .icon{
+    font-size:21px;
+    text-align: center;
+}
+.leftAside .hoverShow{
+    display:none;
+    margin-left:30px;
+}
+.leftAside .hoverShow a:link,.hoverShow a{
+    color:#2f2f2f;
+    line-height:27px;
+}
+.leftAside .hoverShow .titleList{
+    margin-top:20px;
 }
