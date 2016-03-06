@@ -53,10 +53,11 @@
 				<?php the_title(); ?>
 			</h1>
 			<ul class="article-info">   
-				 <?php if ( is_user_logged_in() ) { ?>
+				<li>发布 <?php the_time('Y/m/d'); ?></li>
+                <li>阅读 <?php echo getPostViews(get_the_ID()); ?></li>
+                <li>评论 <?php echo zfunc_comments_users($post->ID); ?></li>
+                   <?php if ( is_user_logged_in() ) { ?>
                 <li><?php edit_post_link('编辑'); ?></li> <?php }?>
-				<li>阅读 <?php echo getPostViews(get_the_ID()); ?></li>
-				<li>评论 <?php echo zfunc_comments_users($post->ID); ?></li>
 			</ul>
 			<div class="clear"></div>
 			<div class="content">
@@ -77,6 +78,14 @@
                  </div>          
                  <span id="likes-count">256</span>        
             </div>-->
+            <div class="otherLink">
+               <div class="previous">
+               <?php previous_post_link('<i class="icon-arrow-left"></i> %link', '%title', 'TRUE'); ?>
+               </div>
+               <div class="next">
+                 <?php next_post_link('%link <i class="icon-arrow-right"></i>', '%title', TRUE); ?>
+               </div>
+           </div>
             <div class="comment">
             	<?php comments_template(); ?>
             </div>
