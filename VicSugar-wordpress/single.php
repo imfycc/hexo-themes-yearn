@@ -49,6 +49,7 @@
 	<div class="container">
 		<div class="article">
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+            <?php setPostViews(get_the_ID());?>
 			<h1 class="title">
 				<?php the_title(); ?>
 			</h1>
