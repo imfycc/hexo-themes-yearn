@@ -35,13 +35,18 @@
     			</div>
     			<div class="titleList">
     				<ul>
-    					<li>
-    						<i class="icon-folder-open"></i> 文章归档
+    					<li class="jqTitle">
+                        	<i class="icon-folder-open"></i> 文章归档 <i class="icon-caret-right"></i>
     						<ul class="archive">
     							<?php wp_get_archives('type=postbypost&format=html&show_post_count=true'); ?>
     						</ul>
     					</li>
-    					<li><i class="icon-tags"></i> 标签</li>
+    					<li>
+    					   <i class="icon-tags"></i> 标签
+    					   <div class="tabs">
+    					    <?php wp_tag_cloud('smallest=12&largest=18&unit=px&number=0');?>
+    					   </div>
+    					</li>
     				</ul>
     			</div>
     		</div>

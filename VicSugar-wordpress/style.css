@@ -453,7 +453,29 @@ code{
 .leftAside .hoverShow .titleList{
     margin-top:20px;
 }
-
+.leftAside .hoverShow .titleList ul li{
+    margin-top:8px;
+}
+.leftAside .hoverShow .titleList .archive{
+    display: none;
+    width:223px;
+    white-space:nowrap; /* 禁止自动换行 */
+    overflow:hidden; /* 隐藏溢出的内容 */
+    text-overflow:ellipsis; /* 溢出文本使用...代替 */
+    -o-text-overflow: ellipsis;
+}
+.leftAside .hoverShow .titleList .archive li a{
+    font-size:14px;
+}
+.leftAside .hoverShow .titleList .tabs a{
+    background-color:#6666FF;
+    padding:0 4px;
+    color:#fff;
+    border-radius:15%;
+    margin:4px;
+    float:left;
+    font-size:13px;
+}
 .otherLink{
     border-bottom: 1px solid #eeeeee;
     border-top: 1px solid #eeeeee;

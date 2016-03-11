@@ -7,23 +7,24 @@ $(function(){
         $('.tip p').text(title);
         var dis = $(this).position().left;
         var l = ($('.tip').outerWidth()-$(this).outerWidth())/2;
-        $(".tip").css({'left':dis - l +'px','opacity':1});
+        $('.tip').css({'left':dis - l +'px','opacity':1});
 
     },function(){
-        $(".tip").css('opacity',0);
+        $('.tip').css('opacity',0);
     });
 });
 
 /*搜索框 聚焦伸长效果*/
 
 $(document).ready(function(){
-  $(".input-search").focus(function(){
+  $('.input-search').focus(function(){
     $(this).animate({width:'200px'});  
   }).blur(function(){
               $(this).animate({width:'120px'});
         });
 });
 
+/*侧面板*/
 $(document).ready(function(){
     $('.leftAside').hover(function(){
         $('.leftAside .icon-reorder').hide();
@@ -36,8 +37,13 @@ $(document).ready(function(){
     });
 });
 
+/*目录折叠效果*/
 $(document).ready(function(){
-    $('.box').click(function(){
-        $(this).children('.text').slideToggle().parents('.box').siblings('.box').children('.text').hide();
-    })
+    $('.jqTitle').hover(function(){
+        $('.archive').show();
+        $('.jqTitle i:nth-child(2)').removeClass('icon-caret-right').addClass('icon-caret-down');
+    },function(){
+        $('.archive').css('display','none');
+        $('.jqTitle i:nth-child(2)').removeClass('icon-caret-down').addClass('icon-caret-right');
+    });
 });
