@@ -145,15 +145,17 @@ li{
 	font-weight: bold;
 }
 .search{
-	float:right;
+	/*float:right;*/
 	color:#717171;
+	margin:6px 0  40px;
+
 }
 .input-search{
 	margin:8px -31px 0  0;
 	border-radius: 2em;
 	padding:7px;
 	border: 1px solid #cccccc;
-	width:120px;
+	width:300px;
 }
 input:focus{
 	outline: none;
@@ -167,8 +169,10 @@ input:focus{
 .login a{
 	color: #717171;
 }
-.right-main{
+.right-container{
 	margin-top: 58px;
+}
+.right-main{
 	padding-left: 40px;
 	float:left;
 }
@@ -218,6 +222,16 @@ input:focus{
 .active{
 	background-color: #6bd95b;
 	color:#fff;
+}
+
+.aside{
+	float:left;
+}
+.hot h3{
+	margin:30px 0 10px;
+}
+.hot .hot-title{
+	line-height:30px;
 }
 
 
