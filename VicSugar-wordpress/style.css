@@ -353,9 +353,10 @@ input:focus{
     font-size: 14px;
     border-radius: 2%;
     color:#657b83;
+    overflow:auto;
 }
 code{
-    white-space: normal;
+    /*white-space: normal;*/
 } /*英文字符串自动换行*/
 .support-author .btn-pay {
     margin: 10px 15px 10px 0;
