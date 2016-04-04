@@ -28,10 +28,12 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.leftAside').hover(function(){
         $('.leftAside .icon-reorder').hide();
-        $(this).animate({width:'300px'});
+        $(this).stop(true)
+        .animate({width:'300px'});
         $('.hoverShow').css('display','block');
     },function(){
-        $(this).animate({width:'60px'});
+        $(this).stop(true)
+        .animate({width:'60px'});
         $('.leftAside .icon-reorder').show();
         $('.hoverShow').css('display','none');
     });

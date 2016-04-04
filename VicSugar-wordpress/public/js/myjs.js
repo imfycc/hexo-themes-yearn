@@ -16,9 +16,11 @@ $(function(){
 
 $(document).ready(function(){
     $('.input-search').focus(function(){
-        $(this).animate({width:'200px'});
+        $(this).stop(true)
+        .animate({width:'200px'});
     }).blur(function(){
-        $(this).animate({width:'120px'});
+        $(this).stop(true)
+        .animate({width:'120px'});
     });
 });
 
