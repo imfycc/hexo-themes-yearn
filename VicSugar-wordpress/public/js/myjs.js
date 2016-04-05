@@ -1,3 +1,5 @@
+
+
 /*左侧边栏的sns伪类效果*/
 $(function(){
     $('.sns img').hover(function(){
@@ -15,23 +17,23 @@ $(function(){
 /*搜索框 聚焦伸长效果*/
 
 $(document).ready(function(){
-    $('.input-search').focus(function(){
-        $(this).stop(true)
-        .animate({width:'200px'});
-    }).blur(function(){
-        $(this).stop(true)
-        .animate({width:'120px'});
-    });
+  $('.input-search').focus(function(){
+    $(this).animate({width:'200px'});  
+  }).blur(function(){
+              $(this).animate({width:'120px'});
+        });
 });
 
 /*侧面板*/
 $(document).ready(function(){
     $('.leftAside').hover(function(){
         $('.leftAside .icon-reorder').hide();
-        $(this).animate({width:'300px'});
+        $(this).stop(true)
+        .animate({width:'300px'});
         $('.hoverShow').css('display','block');
     },function(){
-        $(this).animate({width:'60px'});
+        $(this).stop(true)
+        .animate({width:'60px'});
         $('.leftAside .icon-reorder').show();
         $('.hoverShow').css('display','none');
     });
