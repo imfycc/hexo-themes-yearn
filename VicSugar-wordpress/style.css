@@ -543,6 +543,9 @@ code{
         display:none;
     }
     /********** main ***********/
+    .right-aside {
+        width: 100%;
+}
     .right-main{
         margin-top:20px;
     }
