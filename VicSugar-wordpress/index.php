@@ -64,7 +64,7 @@
         </div>
     </header>
 	<section class="right-aside">
-		<div class="right-nav">
+		<div class="right-nav ms">
 		    <nav class="nav-main">
 				<ul class="left">
 					<?php wp_nav_menu(array('theme_location' => 'main', 'container' => false, 'container_class' => false)); ?>
