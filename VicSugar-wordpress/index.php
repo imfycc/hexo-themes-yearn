@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="baidu_union_verify" content="4a0e189d6aa33c77bf2c7a8fce617ff2"><!--联盟-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="胡方运,程小猿,前端,个人博客,Youthink,Web" />
 	<meta name="description" content="程小猿的个人博客，Web前端工程师的成长之路" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?> ">
