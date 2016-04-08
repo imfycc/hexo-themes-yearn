@@ -13,10 +13,13 @@ Tags: 自适应,简洁,博客,白色
 *{
 	margin:0;
 	padding:0;
+    border:0;
 }
 body{
-	  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	  font-family: "Helvetica Neue","Arial","PingFang SC","Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 }
+
+
 a{
 	text-decoration: none;
 }
@@ -74,6 +77,12 @@ h1,h2,h3,h4,h5{
     -o-transform:translate(0,-10px);
     -ms-transform:translate(0,-10px);
 }
+.intro-word p {
+    margin: 12px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
 .sns{
     margin-top:40px;
     position:absolute;
@@ -129,22 +138,22 @@ h1,h2,h3,h4,h5{
 .right-aside{
 	margin-left:318px;
 }
+.nav-main{
+    width:59%;
+}
 .right-aside .right-nav{
-	padding-left: 30px;
+	padding-left: 40px;
 	position:fixed;
 	top:0;
-	width:83%;
+	width:100%;
 	border-bottom: 1px solid #d9d9d9;
-    box-shadow: -1px 1px 6px rgba(0,0,0,0.35);
+    box-shadow: 4px 1px 6px rgba(0,0,0,0.35);
     background-color: #fff;
 }
 .right-aside .right-nav li{
 	float:left;
-	padding:8px 17px;
-}
-.right-aside .right-nav li:hover{
-    border-bottom:2px solid #6666FF;
-    padding:8px 17px 6px 17px;
+	line-height: 40px;
+    margin-right:30px;
 }
 .right-aside .right-nav li a{
     color:#009800;
@@ -154,6 +163,7 @@ h1,h2,h3,h4,h5{
 .search{
     float:right;
     color:#717171;
+    line-height: 40px;
 }
 .input-search{
     margin:8px -31px 0  0;
@@ -166,10 +176,9 @@ input:focus{
     outline: none;
 }
 .login{
+    line-height: 43px;
     position: absolute;
-    top: 10px;
-    right: 137px;
-
+    right: 375px;
 }
 .login a{
     color: #717171;
@@ -356,6 +365,8 @@ input:focus{
     overflow:auto;
 }
 code{
+    font-family: "Helvetica Neue","Arial","PingFang SC","Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    color:#CC333F;
     /*white-space: normal;*/
 } /*英文字符串自动换行*/
 .support-author .btn-pay {
@@ -495,4 +506,43 @@ code{
 }
 .otherLink .next{
     float:right;
+}
+/********响应式**********/
+
+@media screen and (max-width: 768px) {
+
+    /***header 左侧边栏 ****/
+    .left-aside {
+        width: 100%;
+        padding: 13px 30px 53px;
+    }
+    .left-aside .face-img img {
+        height: 95px;
+        width: 95px;
+    }
+    .left-aside h2 {
+        margin: 7px 0 7px;
+        font-size: 22px;
+   }
+    .sns {
+        width: 216px;
+        position: relative;
+    }
+    .sns li {
+    margin: 13px 10px 6px;
+    }
+    .sns li img {
+        width: 23px;
+    }
+    .sns .tip {
+        top:50px;
+    }
+    .ms{
+        visibility: hidden;
+    }
+
+    
+}
+@media screen and (max-width: 1100px) {
+    
 }
