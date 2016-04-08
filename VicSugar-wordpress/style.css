@@ -548,6 +548,10 @@ code{
 }
     .right-main{
         margin-top:20px;
+        float:none;
+    }
+    .item{
+        width:100%;
     }
 
     
