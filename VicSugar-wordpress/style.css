@@ -545,6 +545,7 @@ code{
     /********** main ***********/
     .right-aside {
         width: 100%;
+        margin: 0 auto;
 }
     .right-main{
         margin-top:20px;
