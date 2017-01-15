@@ -1,0 +1,9 @@
+{
+  "name": "VicSugar",
+  "version": "1.0.0",
+  "description": "Hexo Themes Hexo静态博客主题",
+  "main": "index.js",
+  "repository": "https://github.com/Youthink/VicSugar.git",
+  "author": "Youthink <hi@hufangyun.com>",
+  "license": "MIT"
+}
