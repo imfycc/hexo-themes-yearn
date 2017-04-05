@@ -1,0 +1,64 @@
+<div class="left-aside">
+    <div class="face-img"><img src="<%=theme.avatar%>"></div>
+    <div class="intro-word">
+        <h2><%=theme.author%></h2>
+        <p><%=theme.description%></p>
+    </div>
+    <div class="sns">
+        <ul>
+            <% for (var i in theme.subnav){ %>
+            <li>
+                <a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>">
+                    <img src="http://7oxgmt.com1.z0.glb.clouddn.com/wp-content/themes/VicSugar-wordpress/public/img/icon-<%= i %>.png" alt="<%= i %>" data-tooltip="<%= i %>">
+                </a>
+            </li>
+            <%}%>
+        </ul>
+        <div class="tip">
+            <p>你好</p><span></span>
+        </div>
+    </div>
+</div>
+<div class="right-aside">
+    <div class="right-nav ms">
+        <div class="main">
+            <ul class="left">
+                <% for (var i in theme.menu){ %>
+                <li>
+                    <a href="<%- url_for(theme.menu[i]) %>">
+                        <%= i %>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+            <div class="search">
+                <input type="search"  class="input-search" placeholder="搜索">
+                <i class="icon-search"></i>
+            </div>
+        </div>
+    </div>
+    <div class="right-main">
+        <div class="category">
+            <ul>
+                <li><a href="" class="active">最新</a></li>
+                <li><a href="">归档</a></li>
+                <li><a href="">开发</a></li>
+                <li><a href="">随笔</a></li>
+                <li><a href="">摄影</a></li>
+                <li><a href="">自我管理</a></li>
+                <li><a href="">教程</a></li>
+                <li><a href="">读书</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="list">
+            <div class="main">
+                <% page.posts.each(function(post, index){ %>
+                <%- partial('_partial/post/title',{post: post,index: true}) %>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</div>
+<%- js('./jquery-1.8.3.min.js') %>
+<%- js('./myjs.js') %>

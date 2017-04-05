@@ -1,0 +1,19 @@
+# SubNav
+menu:
+  相册: /photo
+  关于我: /aboutme
+  友链: /friends
+subnav:
+  github: "https://github.com/Youthink"
+  weibo: "http://weibo.com/u/5263249441"
+  #rss: "#"
+  zhihu: "https://www.zhihu.com/people/hu-yang-11-57/"
+  email: "mailto:hufy78@gmail.com"
+  youthol: "http://www.youthol.cn"
+
+description: 天马行空，爱生活，爱coding
+
+favicon: http://7oxgmt.com1.z0.glb.clouddn.com/wp-content/themes/VicSugar-wordpress/public/img/favicon.ico
+
+#你的头像url
+avatar: http://7oxgmt.com1.z0.glb.clouddn.com/wp-content/themes/VicSugar-wordpress/public/img/face.jpg

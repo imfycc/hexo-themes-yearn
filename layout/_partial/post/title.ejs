@@ -1,0 +1,33 @@
+<% if (post.link){ %>
+<div class="item">
+  <div class="title">
+    <a href="<%- url_for(post.link) %>"><%= post.title %></a>
+  </div>
+  <div class="info">
+    <ul>
+      <li>喜欢 3</li>
+      <li>评论 6</li>
+      <li>阅读 16</li>
+    </ul>
+  </div>
+</div>
+<% } else if (post.title){ %>
+  <% if (index){ %>
+    <div class="item">
+      <div class="title">
+        <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+      </div>
+      <div class="info">
+        <ul>
+          <li>喜欢 4</li>
+          <li>评论 6</li>
+          <li>阅读 16</li>
+        </ul>
+      </div>
+    </div>
+  <% } else { %>
+  <h1 class="title">
+    <%= post.title %>
+  </h1>
+  <% } %>
+<% } %>
