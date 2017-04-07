@@ -35,9 +35,6 @@ h1,h2,h3,h4,h5{
 .left{
 	float:left;
 }
-.main{
-	width:800px;
-}
 .left-aside{
 	width: 256px;
 	background-color: #fff;
@@ -558,6 +555,15 @@ code{
 	}
 	.item{
 		width:100%;
+	}
+
+	/************ 文章页 **************/
+
+	.container{
+		width: 100%;
+	}
+	.leftAside{
+		display: none;
 	}
 
 }

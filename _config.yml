@@ -1,6 +1,5 @@
 # SubNav
 menu:
-  相册: /photo
   关于我: /aboutme
   友链: /friends
 subnav:
@@ -13,7 +12,10 @@ subnav:
 
 description: 天马行空，爱生活，爱coding
 
-favicon: http://7oxgmt.com1.z0.glb.clouddn.com/wp-content/themes/VicSugar-wordpress/public/img/favicon.ico
+favicon: /favicon.ico
 
 #你的头像url
-avatar: http://7oxgmt.com1.z0.glb.clouddn.com/wp-content/themes/VicSugar-wordpress/public/img/face.jpg
+avatar: https://tva3.sinaimg.cn/crop.0.0.200.200.180/005Kc3C1jw8f2uep0hhkvj305k05k3yk.jpg
+
+# 展示更新时间
+display_updated: true
