@@ -9,7 +9,7 @@
             <% for (var i in theme.subnav){ %>
             <li>
                 <a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>">
-                    <img src="http://7oxgmt.com1.z0.glb.clouddn.com/wp-content/themes/VicSugar-wordpress/public/img/icon-<%= i %>.png" alt="<%= i %>" data-tooltip="<%= i %>">
+                    <img src="./img/icon-<%= i %>.png" alt="<%= i %>" data-tooltip="<%= i %>">
                 </a>
             </li>
             <%}%>
@@ -40,22 +40,18 @@
     <div class="right-main">
         <div class="category">
             <ul>
-                <li><a href="" class="active">最新</a></li>
-                <li><a href="">归档</a></li>
-                <li><a href="">开发</a></li>
-                <li><a href="">随笔</a></li>
-                <li><a href="">摄影</a></li>
-                <li><a href="">自我管理</a></li>
-                <li><a href="">教程</a></li>
-                <li><a href="">读书</a></li>
+                <% site.categories.sort('name').each(function(item){ %>
+                    <li><a href="<%- config.root %><%- item.path %>" class="active"><%= item.name %></a></li>
+                <% }) %>
             </ul>
         </div>
         <div class="clear"></div>
         <div class="list">
-            <div class="main">
+            <div>
                 <% page.posts.each(function(post, index){ %>
                 <%- partial('_partial/post/title',{post: post,index: true}) %>
                 <% }) %>
+                <%- partial('_partial/paginator') %>
             </div>
         </div>
     </div>
