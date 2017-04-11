@@ -9,7 +9,7 @@
             <% for (var i in theme.subnav){ %>
             <li>
                 <a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>">
-                    <img src="./img/icon-<%= i %>.png" alt="<%= i %>" data-tooltip="<%= i %>">
+                    <img src="<%= config.root %>./img/icon-<%= i %>.png" alt="<%= i %>" data-tooltip="<%= i %>">
                 </a>
             </li>
             <%}%>
@@ -40,8 +40,9 @@
     <div class="right-main">
         <div class="category">
             <ul>
+                <li><a href="<%- config.root %>" class="<%- is_home() ? "active" : null %>">最新</a></li>
                 <% site.categories.sort('name').each(function(item){ %>
-                    <li><a href="<%- config.root %><%- item.path %>" class="active"><%= item.name %></a></li>
+                    <li><a href="<%- config.root %><%- item.path %>" class="<%- is_current(item.path) ? "active" : null %>"><%= item.name %></a></li>
                 <% }) %>
             </ul>
         </div>
@@ -58,3 +59,8 @@
 </div>
 <%- js('./jquery-1.8.3.min.js') %>
 <%- js('./myjs.js') %>
+<script type="text/javascript">
+    var host = "hufangyun.com" || "www.hufangyun.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>

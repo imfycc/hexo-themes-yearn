@@ -184,13 +184,19 @@ input:focus{
 
 }
 .category li a{
-	padding: 5px 10px;
+	padding: 5px 11px;
 	border: 1px solid #d9d9d9;
-	border-radius: 14px;
+	border-radius: 15px;
 	box-sizing: border-box;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: normal;
 	line-height: 1.5;
+	color: #555555;
+}
+
+.category li a.active{
+	background: #6bd95b;
+	color: #ffffff;
 }
 
 .category li a:hover {
@@ -332,7 +338,7 @@ th,td {
 	margin-bottom:0;
 }
 .article img {
-	max-width: 700px;
+	width: 100%;
 	margin: 8px auto 8px;
 	display: block;
 }
@@ -351,20 +357,36 @@ th,td {
 	font-size: 17px;
 	font-weight: bold;
 }
-.article pre {
+.article figure.highlight {
 	background-color: #fdf6e3;
-	padding: 8px;
+	padding: 6px;
 	margin-bottom: 10px;
 	font-size: 14px;
-	border-radius: 2%;
+	border-radius: 5px;
 	color:#657b83;
-	overflow:auto;
+}
+.article figure.highlight pre{
+	white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 code{
 	font-family: "Helvetica Neue","Arial","PingFang SC","Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	color:#CC333F;
 	/*white-space: normal;*/
 } /*英文字符串自动换行*/
+
+figure.highlight {
+    width: 100%;
+    overflow-x: auto;
+}
+
+figure.highlight table,
+figure.highlight tr,
+figure.highlight td{
+	border: none;
+}
+
 .support-author .btn-pay {
 	margin: 10px 15px 10px 0;
 	color: white;
@@ -502,6 +524,24 @@ code{
 }
 .otherLink .next{
 	float:right;
+}
+.page-nav{
+	margin: 50px auto 20px;
+}
+.page-number {
+	padding: 6px 12px;
+	margin-left: -1px;
+	text-decoration: none;
+	border: 1px solid #dddddd;
+}
+.current{
+	background: #49be38;
+	color: #ffffff;
+	padding: 7px 12px;
+}
+.extend{
+	padding: 6px 12px;
+	border: 1px solid #dddddd;
 }
 /********响应式**********/
 
