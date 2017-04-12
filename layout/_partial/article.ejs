@@ -60,7 +60,9 @@
             <li>
                 <%- partial('post/updated') %>
             </li>
-            <li>阅读</li>
+            <li id="busuanzi_container_page_pv">
+              阅读 <span id="busuanzi_value_page_pv"></span>
+            </li>
             <li>评论</li>
         </ul>
         <div class="clear"></div>
@@ -97,5 +99,6 @@
 </div>
 <%- js('./jquery-1.8.3.min.js') %>
 <%- js('./myjs.js') %>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
