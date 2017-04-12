@@ -1,14 +1,14 @@
 # SubNav
 menu:
-  关于我: /aboutme
-  友链: /friends
+  关于我: /2014/01/15/aboutme/
+  友链: /2014/01/15/friends/
 subnav:
   github: "https://github.com/Youthink"
   weibo: "http://weibo.com/u/5263249441"
-  #rss: "#"
   zhihu: "https://www.zhihu.com/people/hu-yang-11-57/"
-  email: "mailto:hufy78@gmail.com"
+  # email: "mailto:hufy78@gmail.com"
   youthol: "http://www.youthol.cn"
+  rss: "/atom.xml"
 
 description: 天马行空，爱生活，爱coding
 
