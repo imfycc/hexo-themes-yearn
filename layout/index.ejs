@@ -57,11 +57,5 @@
         </div>
     </div>
 </div>
-<%- js('./jquery-1.8.3.min.js') %>
-<%- js('./myjs.js') %>
-<script type="text/javascript">
-    var host = "hufangyun.com" || "www.hufangyun.com";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-</script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<%- partial('_partial/script.ejs') %>
