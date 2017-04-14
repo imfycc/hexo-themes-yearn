@@ -13,82 +13,61 @@
     <title><%= config.title %></title>
 </head>
 <body>
-<div class="leftAside">
-    <div class="icon">
-        <i class="icon-reorder"></i>
-    </div>
-    <div class="hoverShow">
-        <div class="nav">
-            <ul>
-                <li><i class="icon-home"></i> <a href="http://hufangyun.com">首页</a></li>
-                <li><i class="icon-star"></i> <a href="http://hufangyun.com">友链</a></li>
-            </ul>
-        </div>
-        <div class="titleList">
-            <ul>
-                <li class="jqTitle">
-                    <i class="icon-folder-open"></i> 文章归档 <i class="icon-caret-right"></i>
-                    <ul class="archive">
-                    </ul>
-                </li>
-                <li>
-                    <i class="icon-tags"></i> 标签
-                    <div class="tabs">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="article">
-            <%- partial('_partial/post/title') %>
-        <ul class="article-info">
-            <li>
-                发布
-                <%- partial('post/date') %>
-            </li>
-            <li>
-                <%- partial('post/updated') %>
-            </li>
-            <li id="busuanzi_container_page_pv">
-              阅读 <span id="busuanzi_value_page_pv"></span>
-            </li>
-            <li>评论</li>
-        </ul>
-        <div class="clear"></div>
-        <div class="content">
-            <%- post.content %>
-        </div>
-        <div class="support-author">
-            <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
-            <a class="btn-pay"  href="#pay-modal">¥ 打赏支持</a>
-        </div>
-        <!--<div class="like ">
-             <div class="like-button">
-                <a id="like-note" href="">
-                    <i class="icon-heart"></i>  喜欢</a>
-             </div>
-             <span id="likes-count">256</span>
-        </div>-->
-        <div class="otherLink">
-            <div class="previous">
-            </div>
-            <div class="next">
-            </div>
-        </div>
-        <div class="comment">
-            <%- partial('post/comments') %>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <div class="info">
-        <p>七牛云加速、Hexo强力驱动，采用自设计VicSugar主题</p>
-        <p>&copy;2013-2017 胡方运的博客 鲁ICP备15009509号</p>
-    </div>
-</div>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<%- partial('script.ejs') %>
+  <div class="navbar-header">
+    <a class="blog-title" href="<%= config.root %>"><%= config.title %></a>
+    <a class="face-img" href="<%= config.root %>">
+      <img src="<%=theme.avatar%>">
+    </a>
+  </div>
+  <div class="container">
+      <div class="article">
+              <%- partial('_partial/post/title') %>
+          <ul class="article-info">
+              <li>
+                  发布
+                  <%- partial('post/date') %>
+              </li>
+              <li>
+                  <%- partial('post/updated') %>
+              </li>
+              <li id="busuanzi_container_page_pv">
+                阅读 <span id="busuanzi_value_page_pv"></span>
+              </li>
+              <li>评论</li>
+          </ul>
+          <div class="clear"></div>
+          <div class="content">
+              <%- post.content %>
+          </div>
+          <div class="support-author">
+              <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+              <a class="btn-pay"  href="#pay-modal">¥ 打赏支持</a>
+          </div>
+          <!--<div class="like ">
+               <div class="like-button">
+                  <a id="like-note" href="">
+                      <i class="icon-heart"></i>  喜欢</a>
+               </div>
+               <span id="likes-count">256</span>
+          </div>-->
+          <div class="otherLink">
+              <div class="previous">
+              </div>
+              <div class="next">
+              </div>
+          </div>
+          <div class="comment">
+              <%- partial('post/comments') %>
+          </div>
+      </div>
+  </div>
+  <div class="footer">
+      <div class="info">
+          <p>七牛云加速、Hexo强力驱动，采用自设计VicSugar主题</p>
+          <p>&copy;2013-2017 胡方运的博客 鲁ICP备15009509号</p>
+      </div>
+  </div>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <%- partial('script.ejs') %>
 </body>
 </html>

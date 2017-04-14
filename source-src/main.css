@@ -235,6 +235,25 @@ input:focus{
 
 /***************** pages ************************/
 /*header top */
+
+.navbar-header{
+	position: fixed;
+	background: #ffffff;
+	height:50px;
+	width:100%;
+	text-align: center;
+	border-bottom: 1px solid #DEDDDF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), inset 0 1px 0 #ffffff;
+}
+
+.navbar-header .blog-title {
+    line-height: 50px;
+    font-size: 18px;
+}
+.navbar-header .face-img{
+	display: none;
+}
+
 .header{
 	width:100%;
 	background-color: #fff;
@@ -270,7 +289,7 @@ input:focus{
 
 }
 .article{
-	padding: 36px 40px 10px;
+	padding: 65px 40px 10px;
 
 }
 .article .title{
@@ -604,6 +623,24 @@ figure.highlight td{
 	}
 	.leftAside{
 		display: none;
+	}
+	.navbar-header .blog-title{
+		display: none;
+	}
+	.navbar-header .face-img{
+		display: block;
+		margin: 0 auto;
+		line-height: 70px;
+	}
+	.navbar-header .face-img img{
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		transition:All ease-in-out 0.4s;
+		-webkit-transition:All ease-in-out 0.4s;
+		-o-transition:All ease-in-out 0.4s;
+		-moz-transition:All ease-in-out 0.4s;
+		-ms-transition:All ease-in-out 0.4s;
 	}
 
 }
