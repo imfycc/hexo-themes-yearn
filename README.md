@@ -11,9 +11,7 @@
 
 ### 本周的计划
 
-1、加入配置工具 webpack scss css3自动前缀 图片、css、js压缩
-
-去掉jQuery 使用打包后的js和css文件
+1、加入配置工具 webpack scss css3自动前缀 图片
 
 ### 下周的计划
 
@@ -23,9 +21,9 @@
 
 ### 最近
 
-css换用 scss
+dev 加入webpack 热加载
 
-使用webpack打包 压缩代码
+css换用 scss
 
 代码高亮
 
@@ -34,8 +32,6 @@ css换用 scss
 评论、首页文章的阅读数。
 
 4、显示文章的浏览数和文章的评论数
-
-去掉jquery
 
 ## 移动端的bug
 
