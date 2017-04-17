@@ -19,7 +19,10 @@
       </div>
       <div class="info">
         <ul>
-          <li>更新 <time datetime="<%- date_xml(post.updated) %>" itemprop="dateUpdated"><%- date(post.updated) %></time></li>
+          <li>发布 <time datetime="<%- date_xml(post.date) %>" itemprop="date"><%- date(post.date) %></time>
+          </li>
+          <li>更新 <time datetime="<%- date_xml(post.updated) %>" itemprop="dateUpdated"><%- date(post.updated) %></time>
+          </li>
         </ul>
       </div>
     </div>
