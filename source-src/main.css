@@ -209,7 +209,6 @@ input:focus{
 .item{
 	width:600px;
 	margin: 23px 0px;
-	height: 70px;
 	border-bottom: 1px dashed #d9d9d9;
 }
 .item a{
@@ -220,6 +219,9 @@ input:focus{
 }
 .item .title a:hover{
 	color:#000;
+}
+.info{
+	overflow: auto;
 }
 .info li{
 	float:left;
@@ -561,6 +563,9 @@ figure.highlight td{
 .extend{
 	padding: 6px 12px;
 	border: 1px solid #dddddd;
+}
+.next{
+	margin-left: -1px;
 }
 /********响应式**********/
 
