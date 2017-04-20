@@ -292,7 +292,7 @@ input:focus{
 }
 .article{
 	padding: 65px 40px 10px;
-
+	word-break: break-word;
 }
 .article .title{
 	word-break: break-all;
