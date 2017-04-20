@@ -567,6 +567,18 @@ figure.highlight td{
 .next{
 	margin-left: -1px;
 }
+
+/**********代码高亮**********/
+
+.article span.title {
+    font-size: 16px;
+}
+.article pre code{
+	white-space: normal;
+}
+
+
+
 /********响应式**********/
 
 @media screen and (max-width: 768px) {
