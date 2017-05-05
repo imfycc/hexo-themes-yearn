@@ -32,6 +32,12 @@ css换用 scss
 
 代码高亮
 
+http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
+
+https://highlightjs.org/static/demo/
+
+Atelier Seaside Light  风格
+
 评论 底部标签
 
 评论、首页文章的阅读数。

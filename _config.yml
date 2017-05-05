@@ -23,5 +23,5 @@ display_updated: true
 # 代码高亮
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: true
