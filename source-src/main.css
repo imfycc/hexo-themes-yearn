@@ -360,7 +360,7 @@ th,td {
 	margin-bottom:0;
 }
 .article img {
-	width: 100%;
+	max-width: 100%;
 	margin: 8px auto 8px;
 	display: block;
 	border: 5px solid #e0dfcc;
@@ -579,6 +579,11 @@ figure.highlight td{
 .article pre code{
 	white-space: normal;
 }
+
+.article pre code .line{
+	line-height: 2;
+}
+
 /********响应式**********/
 
 @media screen and (max-width: 768px) {

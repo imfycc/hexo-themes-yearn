@@ -19,9 +19,3 @@ avatar: https://tva3.sinaimg.cn/crop.0.0.200.200.180/005Kc3C1jw8f2uep0hhkvj305k0
 
 # 展示更新时间
 display_updated: true
-
-# 代码高亮
-highlight:
-  enable: true
-  line_number: false
-  auto_detect: true
