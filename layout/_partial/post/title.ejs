@@ -23,6 +23,8 @@
           </li>
           <li>更新 <time datetime="<%- date_xml(post.updated) %>" itemprop="dateUpdated"><%- date(post.updated) %></time>
           </li>
+          <li> 评论 <span id = "url::<%= config.url + url_for(post.path) %>" class = "cy_cmt_count" ></span>
+          </li>
         </ul>
       </div>
     </div>
