@@ -60,6 +60,8 @@ Atelier Seaside Light  风格
 
 目录抓取
 
+评论最好的方式是和文章一样，也保存到github page 以后在研究
+
 搜索
 
 首页标题的分类（简书） 简介
