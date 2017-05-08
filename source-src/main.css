@@ -580,7 +580,7 @@ figure.highlight td{
 	white-space: normal;
 }
 
-.article pre code .line{
+.article figure.highlight .line{
 	line-height: 2;
 }
 
