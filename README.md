@@ -42,13 +42,15 @@ https://highlightjs.org/static/demo/
 
 Atelier Seaside Light  风格
 
-评论 底部标签
+底部标签
 
-评论、首页文章的阅读数。
+首页文章的阅读数。
 
-4、显示文章的浏览数和文章的评论数
+4、显示文章的浏览数
 
 ### 以后
+
+文章页 文章标题等的样式
 
 文章内的所有链接旁边显示 可点击符号
 
@@ -61,6 +63,8 @@ Atelier Seaside Light  风格
 目录抓取
 
 评论最好的方式是和文章一样，也保存到github page 以后在研究
+
+畅言的热门评论
 
 搜索
 
@@ -81,7 +85,5 @@ Atelier Seaside Light  风格
 版权声明
 
 访客数
-
-评论栏的样式
 
 图片

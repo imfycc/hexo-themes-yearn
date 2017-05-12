@@ -309,6 +309,9 @@ input:focus{
 	color:#999999;
 	font-size:13px;
 }
+a#changyan_count_unit {
+    color: inherit;
+}
 .article .image-caption{
 	width: 31%;
 	min-width:20%;
