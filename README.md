@@ -11,8 +11,6 @@
 
 1、自适应移动端
 
-## ToDo
-
 ### 本周的计划
 
 1、加入配置工具 webpack scss css3自动前缀 图片
@@ -21,36 +19,26 @@
 
 ### 下周的计划
 
-1、文章页显示导航 首页 所有文章侧边栏出现
+1、首页的标题的图片展示
 
-2、首页的标题的图片展示
+## ToDo
 
 ## bug
 
 
 ### 最近
 
+文章页 文章标题 图片 等的样式 阮一峰 蚂蚁笔记 简书
+
+首页的文章标签 （简书）
+
 dev 加入webpack 热加载
 
 css换用 scss
 
-代码高亮
-
-http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
-
-https://highlightjs.org/static/demo/
-
-Atelier Seaside Light  风格
-
-底部标签
-
-首页文章的阅读数。
-
-4、显示文章的浏览数
+文章页底部标签
 
 ### 以后
-
-文章页 文章标题等的样式
 
 文章内的所有链接旁边显示 可点击符号
 
@@ -61,10 +49,6 @@ Atelier Seaside Light  风格
 处理字体图标
 
 目录抓取
-
-评论最好的方式是和文章一样，也保存到github page 以后在研究
-
-畅言的热门评论
 
 搜索
 
@@ -84,6 +68,4 @@ Atelier Seaside Light  风格
 
 版权声明
 
-访客数
-
-图片
+站点的访客数

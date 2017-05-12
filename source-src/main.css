@@ -384,35 +384,6 @@ th,td {
 	font-size: 17px;
 	font-weight: bold;
 }
-.article figure.highlight {
-	background-color: #fdf6e3;
-	padding: 6px;
-	margin-bottom: 10px;
-	font-size: 14px;
-	border-radius: 5px;
-	color:#657b83;
-}
-.article figure.highlight pre{
-	white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
-}
-code{
-	font-family: "Helvetica Neue","Arial","PingFang SC","Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
-	color:#CC333F;
-	/*white-space: normal;*/
-} /*英文字符串自动换行*/
-
-figure.highlight {
-    width: 100%;
-    overflow-x: auto;
-}
-
-figure.highlight table,
-figure.highlight tr,
-figure.highlight td{
-	border: none;
-}
 
 .support-author .btn-pay {
 	margin: 10px 15px 10px 0;
@@ -576,15 +547,121 @@ figure.highlight td{
 
 /**********代码高亮**********/
 
+.article figure.highlight {
+	width: 100%;
+	overflow-x: auto;
+	background-color: #fdf6e3;
+	padding: 6px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	border-radius: 5px;
+	color:#657b83;
+}
+.article figure.highlight pre{
+	/*white-space: pre-wrap;*/
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.article figure.highlight table,
+.article figure.highlight tr,
+.article figure.highlight td{
+	border: none;
+}
+
 .article span.title {
     font-size: 16px;
 }
-.article pre code{
+.article code,
+.article figure.highlight .code
+{
 	white-space: normal;
+	font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+.article code{
+	display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: pink;
+  border-radius: 5px;
+	color: #555555;
+  font-size: 15px;
 }
 
 .article figure.highlight .line{
 	line-height: 2;
+	font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+
+.article figure.highlight .comment,
+.article figure.highlight .quote {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.article figure.highlight .keyword,
+.article figure.highlight .selector-tag,
+.article figure.highlight .addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.article figure.highlight .number,
+.article figure.highlight .string,
+.article figure.highlight .meta .article figure.highlight .meta-string,
+.article figure.highlight .literal,
+.article figure.highlight .doctag,
+.article figure.highlight .regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.article figure.highlight .title,
+.article figure.highlight .section,
+.article figure.highlight .name,
+.article figure.highlight .selector-id,
+.article figure.highlight .selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.article figure.highlight .attribute,
+.article figure.highlight .attr,
+.article figure.highlight .variable,
+.article figure.highlight .template-variable,
+.article figure.highlight .class .article figure.highlight .title,
+.article figure.highlight .type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.article figure.highlight .symbol,
+.article figure.highlight .bullet,
+.article figure.highlight .subst,
+.article figure.highlight .meta,
+.article figure.highlight .meta .article figure.highlight .keyword,
+.article figure.highlight .selector-attr,
+.article figure.highlight .selector-pseudo,
+.article figure.highlight .link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.article figure.highlight .built_in,
+.article figure.highlight .deletion {
+  color: #dc322f;
+}
+
+.article figure.highlight .formula {
+  background: #eee8d5;
+}
+
+.article figure.highlight .emphasis {
+  font-style: italic;
+}
+
+.article figure.highlight .strong {
+  font-weight: bold;
 }
 
 /********响应式**********/
