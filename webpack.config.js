@@ -21,9 +21,23 @@ module.exports = {
   },
   module: {
         rules: [{
-            test: /\.css$/,
+            test: /\.(scss|sass|css)$/,
             use: ExtractTextPlugin.extract({
-              use: 'css-loader'
+              fallback: "style-loader",
+              use: [
+                'css-loader',
+                {
+                  loader: 'postcss-loader',
+                  options: {
+                    plugins: () => {
+                      return [
+                       require('autoprefixer')()
+                      ]
+                    }
+                  }
+                },
+                'sass-loader'
+              ]
             })
         }]
     },
@@ -43,5 +57,11 @@ module.exports = {
          template: './source-src/css.ejs',
          filename: '../layout/_partial/css.ejs'
        })
-    ]
+    ],
+    devServer: {
+      contentBase: path.join(__dirname, "source-src"),
+      compress: true,
+      port: 9000,
+      hot: true
+    }
 };

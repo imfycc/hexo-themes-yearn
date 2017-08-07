@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a theme for hexo",
   "scripts": {
-		"clean":"rm -rf ./source/*.js *.css",
+    "clean": "rm -rf ./source/*.js ./source/*.css",
     "dev": "webpack",
     "dist": "yarn run clean && webpack -p"
   },
@@ -17,9 +17,14 @@
   "author": "Youthink <hufy78@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^0.28.0",
-    "extract-text-webpack-plugin": "^2.1.0",
+    "autoprefixer": "^7.1.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.28.0",
-    "webpack": "^2.3.3"
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1"
   }
 }

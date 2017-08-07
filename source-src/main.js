@@ -1,4 +1,4 @@
-import './main.css';
+import './main.scss';
 
 
 //http 转 https

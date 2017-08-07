@@ -1,11 +1,11 @@
 @charset "utf-8";
 /*
 Theme Name: VicSugar
-Theme URI: http://hufangyun.com
-Description: 类似简书的博客主题
-Version: 0.6
-Author: Vic.Hu
-Author URI: http://hufangyun.com
+Theme URI: https://hufangyun.com
+Description: 类似简约的Hexo博客主题
+Version: 0.7
+Author: 小猿大圣
+Author URI: https://hufangyun.com
 Tags: 自适应,简洁,博客,白色
 */
 
@@ -18,8 +18,6 @@ Tags: 自适应,简洁,博客,白色
 body{
 	font-family: "Helvetica Neue","Arial","PingFang SC","Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 }
-
-
 a{
 	text-decoration: none;
 }
@@ -45,27 +43,20 @@ h1,h2,h3,h4,h5{
 	border-right: 1px solid #d9d9d9;
 	box-shadow: -1px 1px 6px rgba(0,0,0,0.35);
 	text-align: center;
-
-}
-.left-aside h2{
-	margin:14px 0 50px;
-}
-.left-aside .face-img img{
-	border-radius: 50%;
-	height:150px;
-	width:150px;
-	transition:All ease-in-out 0.4s;
-	-webkit-transition:All ease-in-out 0.4s;
-	-o-transition:All ease-in-out 0.4s;
-	-moz-transition:All ease-in-out 0.4s;
-	-ms-transition:All ease-in-out 0.4s;
-}
-.left-aside .face-img img:hover{
-	transform:translate(0px,-10px);
-	-webkit-transform:translate(0px,-10px);
-	-moz-transform:translate(0,-10px);
-	-o-transform:translate(0,-10px);
-	-ms-transform:translate(0,-10px);
+	h2{
+		margin:14px 0 50px;
+	}
+	.face-img{
+		img{
+			border-radius: 50%;
+			height:150px;
+			width:150px;
+			transition:All ease-in-out 0.4s;
+			&:hover{
+				transform:translate(0px,-10px);
+			}
+		}
+	}
 }
 .intro-word p {
 	margin: 12px;
@@ -80,17 +71,9 @@ h1,h2,h3,h4,h5{
 .sns li img{
 	width:31px;
 	transition:All ease-in-out 0.4s;
-	-webkit-transition:All ease-in-out 0.4s;
-	-o-transition:All ease-in-out 0.4s;
-	-moz-transition:All ease-in-out 0.4s;
-	-ms-transition:All ease-in-out 0.4s;
 }
 .sns li img:hover{
 	transform:rotate(360deg);
-	-webkit-transform:rotate(360deg);
-	-moz-transform:rotate(360deg);
-	-o-transform:rotate(360deg);
-	-ms-transform:rotate(360deg);
 }
 .sns li{
 	float:left;
@@ -108,12 +91,7 @@ h1,h2,h3,h4,h5{
 	color:#3D3D3D;
 	font-weight: bold;
 	white-space:nowrap;
-
 	transition:All ease-in-out 0.4s;
-	-webkit-transition:All ease-in-out 0.4s;
-	-o-transition:All ease-in-out 0.4s;
-	-moz-transition:All ease-in-out 0.4s;
-	-ms-transition:All ease-in-out 0.4s;
 }
 .sns .tip span{
 	position: absolute;
@@ -233,6 +211,13 @@ input:focus{
 	background-color: #6bd95b;
 	color:#fff;
 }
+.coding{
+	margin-top:20px;
+	width:130px;
+}
+.coding img{
+	width:100%;
+}
 
 
 /***************** pages ************************/
@@ -294,20 +279,22 @@ input:focus{
 .article{
 	padding: 65px 40px 10px;
 	word-break: break-word;
-}
-.article .title{
-	word-break: break-all;
-	font-size: 32px;
-	font-weight: bold;
-	line-height: 1.5;
-	color:#555555;
-	margin-bottom:15px;
-}
-.article .article-info li{
-	float:left;
-	margin:0px 15px 30px 0px;
-	color:#999999;
-	font-size:13px;
+	.title{
+		word-break: break-all;
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 1.5;
+		color:#555555;
+		margin-bottom:15px;
+	}
+	.article-info {
+		li{
+			float:left;
+			margin:0px 15px 30px 0px;
+			color:#999999;
+			font-size:13px;
+		}
+	}
 }
 a#changyan_count_unit {
     color: inherit;
@@ -338,10 +325,12 @@ a#changyan_count_unit {
 	color: inherit;
 	line-height: 1.8;
 	text-rendering: optimizelegibility;
-	font-size:20px;
 }
 .article .content h2{
 	margin-bottom:10px;
+}
+.article .content a{
+	color:#c7254e;
 }
 .article  p{
 	margin: 0 0 25px 0;
@@ -366,8 +355,12 @@ th,td {
 	max-width: 100%;
 	margin: 8px auto 8px;
 	display: block;
-	border: 5px solid #e0dfcc;
+	/*border: 5px solid #fdf6e3;*/
 	border-radius: 10px;
+}
+
+.article table {
+	margin-bottom: 25px;
 }
 
 .article .support-author {
@@ -532,6 +525,12 @@ th,td {
 	text-decoration: none;
 	border: 1px solid #dddddd;
 }
+.page-nav .space {
+  padding: 6px 7px;
+  margin-left: -1px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
 .current{
 	background: #49be38;
 	color: #ffffff;
@@ -552,7 +551,8 @@ th,td {
 	overflow-x: auto;
 	background-color: #fdf6e3;
 	padding: 6px;
-	margin-bottom: 10px;
+	margin-bottom: 13px;
+	/* margin-top: -13px; 与标题之间没有间距 */
 	font-size: 14px;
 	border-radius: 5px;
 	color:#657b83;
@@ -567,6 +567,7 @@ th,td {
 .article figure.highlight tr,
 .article figure.highlight td{
 	border: none;
+	margin-bottom: 0;
 }
 
 .article span.title {
@@ -580,11 +581,11 @@ th,td {
 }
 .article code{
 	display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: pink;
+  padding:0px 5px 3px;
+	margin:0 4px;
+  background-color: #fdf6e3;
   border-radius: 5px;
-	color: #555555;
+	color: #c7254e;
   font-size: 15px;
 }
 
