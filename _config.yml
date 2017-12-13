@@ -1,6 +1,6 @@
 # SubNav
 menu:
-  关于我: /2014/aboutme/
+  #关于我: /2014/aboutme/
   友链: /2014/friends/
 subnav:
   github: "https://github.com/Youthink"
