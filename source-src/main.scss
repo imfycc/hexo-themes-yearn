@@ -177,9 +177,13 @@ input:focus{
   font-size: 15px;
 }
 
-#search-result li a:hover {
-  color: #999999;
+a:hover {
+  color: #21D4FD;
+  background: -webkit-linear-gradient(30deg, #21D4FD, #B721FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .login{
 	line-height: 43px;
 	position: absolute;

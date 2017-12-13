@@ -4,7 +4,7 @@
   "description": "a theme for hexo",
   "scripts": {
     "clean": "rm -rf ./source/*.js ./source/*.css",
-    "dev": "webpack",
+    "dev": "yarn run clean && webpack",
     "dist": "yarn run clean && webpack -p"
   },
   "keywords": [
