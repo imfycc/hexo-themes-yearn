@@ -27,6 +27,9 @@ Tags: 自适应,简洁,博客,白色
 body {
   font-family: -apple-system,"Helvetica Neue", "Helvetica", "Arial","PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
 }
 
 a {
@@ -248,6 +251,7 @@ input:focus{
     .active {
       background: #6bd95b;
       color: #ffffff;
+      border: 1px solid #6bd95b;
     }
   }
 }
@@ -450,6 +454,24 @@ input:focus{
     }
   }
 
+  table {
+    width: 100%;
+    border: 1px #E6E6E6 solid;
+    border-collapse: collapse;
+  }
+
+  th {
+    background: #F3F3F3;
+    text-align: left;
+  }
+
+  th, td {
+    border: 1px solid #E6E6E6;
+    padding: 5px 8px;
+    word-break: normal;
+  }
+
+
 	.article-info {
 		li{
 			float:left;
@@ -484,13 +506,6 @@ a#changyan_count_unit {
 	margin-bottom:10px;
 }
 
-th, td, tr, table {
-	border: 1px #ddd solid;
-	border-collapse: collapse;
-}
-th,td {
-	padding:8px;
-}
 .content blockquote p{
 	margin-bottom:0;
 }
@@ -573,12 +588,20 @@ th,td {
 	border-bottom: 1px solid #eeeeee;
 }
 .footer{
-	background-color:#EFEFEF;
-	border-top: 1px solid #d9d9d9;
-	margin:10px auto 0;
-	text-align: center;
-	padding:80px 0 10px;
-	line-height: 38px;
+  background-color:#EFEFEF;
+  border-top: 1px solid #d9d9d9;
+  margin:10px auto 0;
+  text-align: center;
+  padding:80px 0 10px;
+  line-height: 38px;
+  .info {
+    a {
+      color: #333;
+      &:hover {
+        color: #49be38;
+      }
+    }
+  }
 }
 
 
@@ -891,8 +914,8 @@ th,td {
 		width: 30px;
     transition:All ease-in-out 0.4s;
   }
-
 }
+
 @media screen and (max-width: 1100px) {
 
 }
