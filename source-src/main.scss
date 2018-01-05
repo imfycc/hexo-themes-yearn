@@ -358,7 +358,7 @@ input:focus{
 
 }
 .article {
-  padding: 65px 40px 10px;
+  padding: 65px 30px 20px 20px;
   word-break: break-word;
 
   h2 {
@@ -722,6 +722,9 @@ a#changyan_count_unit {
   font-size: 14px;
   border-radius: 5px;
   color:#657b83;
+  .title {
+    font-size: 14px;
+  }
 }
 .article figure.highlight pre{
 	/*white-space: pre-wrap;*/
@@ -736,19 +739,13 @@ a#changyan_count_unit {
 	margin-bottom: 0;
 }
 
-.article span.title {
-    font-size: 16px;
-}
 .article code,
-.article figure.highlight .code
+.article figure.highlight .code,
+.article figure.highlight .line
 {
-	white-space: normal;
-	font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-}
-
-.article figure.highlight .line{
-	line-height: 2;
-	font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  line-height: 2;
+  //white-space: normal; 代码不能缩进
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 
 .article figure.highlight .comment,
