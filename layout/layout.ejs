@@ -12,7 +12,7 @@
 	<link rel="dns-prefetch" href="http://hm.baidu.com/">
   <%- partial('_partial/css.ejs') %>
 	<link rel="shortcut icon" href="<%= theme.favicon %>" title="Favicon">
-	<title><%= config.title %></title>
+	<title><%= page.title ? page.title : config.title %></title>
 </head>
 <body>
 <%- body %>
