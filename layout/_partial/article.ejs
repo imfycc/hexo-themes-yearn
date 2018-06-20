@@ -27,8 +27,10 @@
             <%- post.content %>
         </div>
         <div class="support-author">
-            <p>感谢您的阅读。 🙏 </p>
+          <p>感谢您的阅读。 🙏
+            <a href="https://hufangyun.com/2018/copyright-reprinted/" target="_blank">关于转载请看这里</a>
             <!--<a class="btn-pay"  href="#pay-modal">¥ 打赏支持</a>-->
+          </p>
         </div>
         <!--<div class="like ">
              <div class="like-button">
@@ -60,4 +62,7 @@
 </div>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+<% if (post.mathjax){ %>
+  <%- partial('_partial/post/mathjax') %>
+<% } %>
 <%- partial('script.ejs') %>
