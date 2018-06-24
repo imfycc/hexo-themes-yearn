@@ -14,8 +14,6 @@
 
 ## 开发计划
 
-参考 https://www.imys.net/archives/
-
 侧边栏可以折叠 文章列表居中
 
 顶部的导航改为全局
@@ -42,7 +40,7 @@ http://chenhuichao.com/2018/04/16/seo/seo-in-station-optimization/
 
 浏览器控制台打印一下我的博客主题，介绍一下。
 
-写一下关于我 完善 console.log 文章
+写一下关于我
 
 掘金的小徽章阅读数
 
@@ -53,8 +51,6 @@ http://chenhuichao.com/2018/04/16/seo/seo-in-station-optimization/
 文章置顶 文章推荐
 
 图片下面的解释  参考简书
-
-换用 webfont  对比 svg 的好处
 
 文章页底部标签
 
