@@ -1,12 +1,11 @@
 @charset "utf-8";
 /*
-Theme Name: VicSugar
+Theme Name: Sugar
 Theme URI: https://hufangyun.com
-Description: 类似简约的Hexo博客主题
-Version: 0.7
+Description: Hexo themes
+Version: 0.8
 Author: 小猿大圣
 Author URI: https://hufangyun.com
-Tags: 自适应,简洁,博客,白色
 */
 
 /********* Global *********/
@@ -36,7 +35,7 @@ a {
  text-decoration: none;
 }
 
-li{
+li {
  list-style: none;
 }
 
@@ -50,7 +49,7 @@ h2 {
   margin-top: 32px;
 }
 
-h3, h4{
+h3, h4 {
   margin-top: 32px;
 }
 
@@ -66,7 +65,9 @@ h3, h4{
 
 .left-aside {
   width: 256px;
-  background-color: #fff;
+  //background: url(https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4bb45f83ac28335f5bbac4f520cd97f&auto=format&fit=crop&w=668&q=80);
+  background: url(https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=28f9a1a0be65067d877bd730ff121fa8&auto=format&fit=crop&w=668&q=80);
+  background-size: cover;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -82,9 +83,12 @@ h3, h4{
   .face-img {
     img {
       border-radius: 50%;
-      height: 150px;
-      width: 150px;
+      height: 100px;
+      width: 100px;
       transition: All ease-in-out 0.4s;
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0 0 5px #95a5a6;
       &:hover {
         transform: translate(0px,-10px);
       }
@@ -291,14 +295,25 @@ input:focus{
 	background-color: #6bd95b;
 	color:#fff;
 }
-.coding{
-	margin-top:20px;
-	width:130px;
-}
-.coding img{
-	width:100%;
-}
 
+/****************** hosted **********************/
+
+.hosted {
+  margin-top:20px;
+  ul {
+    li {
+      float: left;
+      margin-right: 30px;
+      a {
+        width: 130px;
+        display: block;
+        img {
+          width:100%;
+        }
+      }
+    }
+  }
+}
 
 /***************** pages ************************/
 /*header top */
@@ -682,32 +697,49 @@ a#changyan_count_unit {
 .otherLink .next{
 	float:right;
 }
-.page-nav{
-	margin: 50px auto 20px;
-}
-.page-number {
-	padding: 6px 12px;
-	margin-left: -1px;
-	text-decoration: none;
-	border: 1px solid #dddddd;
-}
-.page-nav .space {
-  padding: 6px 7px;
-  margin-left: -1px;
+
+/******* index page nav *********/
+.page-nav {
+  margin: 50px auto 20px;
+  font-weight: 500;
   text-decoration: none;
-  border: 1px solid #ddd;
-}
-.current{
-	background: #49be38;
-	color: #ffffff;
-	padding: 7px 12px;
-}
-.extend{
-	padding: 6px 12px;
-	border: 1px solid #dddddd;
-}
-.next{
-	margin-left: -1px;
+  a {
+    &:active, &:link, &:visited, &:hover {
+      color: #888888;
+    }
+  }
+  .page-number {
+    padding: 6px 12px;
+    margin-left: -1px;
+    border: 1px solid #dddddd;
+
+    &.current {
+      background: #15a829;
+      color: #ffffff;
+      padding: 7px 12px;
+    }
+  }
+  .extend {
+    padding: 6px 12px;
+    border: 1px solid #dddddd;
+
+    &.prev {
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+
+    &.next {
+      margin-left: -1px;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+
+  .space {
+    padding: 6px 7px;
+    margin-left: -1px;
+    border: 1px solid #ddd;
+  }
 }
 
 /******** 代码高亮区 Mac装饰 *************/
