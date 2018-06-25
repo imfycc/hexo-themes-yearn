@@ -22,6 +22,10 @@ module.exports = {
 
   devtool: 'inline-source-map',
 
+  devServer: {
+    contentBase: './source'
+  },
+
   module: {
     rules: [{
       test: /\.(scss|sass|css)$/,
@@ -47,7 +51,7 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('[name].[hash:6].css'),
-    new CleanWebpackPlugin(['source']),
+    new CleanWebpackPlugin('source'),
     new HtmlWebpackPlugin({
       inject: false,
       cache:false,
