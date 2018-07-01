@@ -5,35 +5,33 @@
 
 ## Development plan
 
-If only one search results, press enter to skip to the results page.
-
-add chat tool
+Random change the sidebar images
 
 ### Demand
 
+Change the background of the article page title
+
 every acticle set to meta desc
 
-In the console to introduce my blog
+webpack config optimization
 
 images uploaded to the CDN
 
 about me
 
-Random change the sidebar images
-
 write wiki of themes
 
-Change the background of the article page title
-
 test themes for others to use
+
+In the console to introduce my blog
+
+like acticle
 
 search style optimization
 
 The watermark image automatically
 
 comments use gitment、gittalk 、livere
-
-webpack config optimization
 
 article title add the anchor
 
@@ -52,7 +50,5 @@ The article page at the bottom of the label
 Copyright statement
 
 site visitors
-
-like acticle
 
 add more animations
