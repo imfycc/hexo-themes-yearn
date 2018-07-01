@@ -16,7 +16,6 @@ Author URI: https://hufangyun.com
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 * {
   margin:0;
   padding:0;
@@ -431,6 +430,27 @@ input:focus{
     }
   }
 
+  img {
+    padding: 3px;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    margin: 8px auto 8px;
+    display: block;
+  }
+
+  span {
+    &.img-alt {
+      max-width: 80%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0px 0 2px;
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 12px;
+      color: #969696;
+    }
+  }
+
   blockquote {
     padding: 10px 20px;
     margin: 20px 0;
@@ -553,14 +573,6 @@ a#changyan_count_unit {
 .content blockquote p{
 	margin-bottom:0;
 }
-.article img {
-  padding: 3px;
-  border: 1px solid #ddd;
-  max-width: 100%;
-  margin: 8px auto 8px;
-  display: block;
-}
-
 .article table {
 	margin-bottom: 25px;
 }

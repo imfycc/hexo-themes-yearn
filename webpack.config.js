@@ -23,7 +23,7 @@ module.exports = {
   devtool: 'inline-source-map',
 
   devServer: {
-    contentBase: './source'
+    contentBase: './source-src'
   },
 
   module: {
