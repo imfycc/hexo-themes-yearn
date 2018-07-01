@@ -1,12 +1,12 @@
 import './main.scss';
 
 
-//http 转 https
+//http to https
 var host = "hufangyun.com" || "www.hufangyun.com";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
 
-//百度统计
+// Baidu Analytics
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -15,26 +15,28 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
-//搜索
+// search
 var searchData;
 var search = document.getElementById('search');
 
 if(search) {
   search.addEventListener('input', function(e) {
     var key = this.value.trim();
-      if (!key) {
-        return;
-      }
+    if (!key) {
+      return;
+    }
 
-      var regExp = new RegExp(key.replace(/[ ]/g, '|'), 'gmi');
+    var regExp = new RegExp(key.replace(/[ ]/g, '|'), 'gmi');
 
-      loadData(function (data) {
-        var result = data.filter(function (post) {
-          return matcher(post, regExp);
-        });
-
-        render(result);
+    loadData(function (data) {
+      var result = data.filter(function (post) {
+        return matcher(post, regExp);
       });
+
+      render(result);
+
+      keyDown();
+    });
 
     e.preventDefault();
   });
@@ -71,8 +73,11 @@ function render(data) {
   var html = '';
   if (data.length) {
 
-    html = data.map(function (post) {
-        return '<li><a href='+ post.path +'>' + post.title + '</a></li>';
+    html = data.map(function (post, i) {
+        if (i == 0) {
+        return '<li><a href='+ window.location.origin + '/'+ post.path +'>' + post.title + '</a><span class="search-enter"> 🚀 </span></li>';
+        }
+        return '<li><a href='+ window.location.origin + '/' + post.path +'>' + post.title + '</a></li>';
     });
 
     if (html) {
@@ -81,6 +86,20 @@ function render(data) {
     var result = document.getElementById('search-result');
     result.innerHTML = html.join('');
   }
+}
+
+function keyDown() {
+  document.addEventListener('keydown', (event) => {
+    var keyCode = event.keyCode;
+    var ENTER = 13;
+    if (keyCode == ENTER ) {
+      var searchResult = document.getElementById('search-result');
+      var firstLiTag = searchResult.firstChild;
+      var firstATag = firstLiTag && firstLiTag.firstChild;
+      var href = firstATag && firstATag.href;
+      window.location.href = href;
+    }
+  });
 }
 
 function matcher(post, regExp) {
@@ -92,10 +111,9 @@ function regtest(raw, regExp) {
   return regExp.test(raw);
 }
 
+// chat tool
 daovoice('init', {
   app_id: "1ff30348"
 });
 daovoice('update');
-
-
 
