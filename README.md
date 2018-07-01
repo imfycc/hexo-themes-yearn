@@ -7,29 +7,35 @@
 
 If only one search results, press enter to skip to the results page.
 
-search style optimization
-
 add chat tool
 
-每篇文章保留一句话描述，设置 meta desc 属性
+### Demand
 
-浏览器控制台打印一下我的博客主题，介绍一下。
+every acticle set to meta desc
+
+In the console to introduce my blog
+
+images uploaded to the CDN
 
 about me
 
-静态文件的压缩打包
+Random change the sidebar images
 
-图片上传到
+write wiki of themes
 
-### Demand
+Change the background of the article page title
+
+test themes for others to use
+
+search style optimization
+
+The watermark image automatically
 
 comments use gitment、gittalk 、livere
 
 webpack config optimization
 
 article title add the anchor
-
-set p search pages
 
 set to ban climb some of the page the search engine
 
