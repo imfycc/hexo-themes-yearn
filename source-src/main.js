@@ -92,5 +92,10 @@ function regtest(raw, regExp) {
   return regExp.test(raw);
 }
 
+daovoice('init', {
+  app_id: "1ff30348"
+});
+daovoice('update');
+
 
 
