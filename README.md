@@ -9,6 +9,14 @@ Change the background of the article page title
 
 ### Demand
 
+global color like vue
+
+auto delete public needless js and css
+
+back top
+
+previous posts and next posts
+
 Random change the sidebar images
 
 every acticle set to meta desc
