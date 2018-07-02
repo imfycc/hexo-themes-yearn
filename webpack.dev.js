@@ -9,8 +9,8 @@ module.exports = merge(common, {
     filename: 'js/[name].js',
     },
   plugins: [
-    new ExtractTextPlugin('style/[name].css'),
-    watch: true
-  ]
+    new ExtractTextPlugin('style/[name].css')
+  ],
+  watch: true
 });
 
