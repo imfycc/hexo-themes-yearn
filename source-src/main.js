@@ -1,5 +1,37 @@
 import './main.scss';
+import Trianglify from './trianglify.min.js';
 
+const pattern = Trianglify({
+  width: window.innerWidth,
+  height: 230,
+  variance: 0.56,
+  cell_size: 46,
+  x_colors: 'random',
+  y_colors: 'match_x',
+  palette: Trianglify.colorbrewer,
+  color_space: 'lab',
+  color_function: false,
+  stroke_width: 1.2,
+  seed: window.location.href
+});
+
+const pageFirstChild = document.querySelector('.navbar-header');
+if (pageFirstChild) {
+  document.body.insertBefore(pattern.canvas(), pageFirstChild);
+  toggleHeaderNavBar();
+}
+
+function toggleHeaderNavBar() {
+  document.addEventListener('scroll', function() {
+    const offset = window.pageYOffset;
+    if (offset > 128) {
+      pageFirstChild.classList.add('fixed-header');
+    }
+    if (offset <= 128) {
+      pageFirstChild.classList.remove('fixed-header');
+    }
+  });
+}
 
 //http to https
 var host = "hufangyun.com" || "www.hufangyun.com";

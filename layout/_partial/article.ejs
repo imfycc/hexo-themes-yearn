@@ -4,52 +4,59 @@
     <img src="<%=theme.avatar%>">
   </a>
 </div>
-<div class="container">
+<main>
+  <div class="article-title">
+    <%- partial('_partial/post/title') %>
+    <ul class="article-info">
+      <li>
+        发布
+        <%- partial('post/date') %>
+      </li>
+      <li>
+        <%- partial('post/updated') %>
+      </li>
+      <li id="busuanzi_container_page_pv">
+        阅读 <span id="busuanzi_value_page_pv"></span>
+      </li>
+      <li>
+        评论 <a href="#SOHUCS" id="changyan_count_unit"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
     <div class="article">
-            <%- partial('_partial/post/title') %>
-        <ul class="article-info">
-            <li>
-                发布
-                <%- partial('post/date') %>
-            </li>
-            <li>
-                <%- partial('post/updated') %>
-            </li>
-            <li id="busuanzi_container_page_pv">
-              阅读 <span id="busuanzi_value_page_pv"></span>
-            </li>
-            <li>
-              评论 <a href="#SOHUCS" id="changyan_count_unit"></a>
-            </li>
-        </ul>
-        <div class="clear"></div>
-        <div class="content">
-            <%- post.content %>
-        </div>
+      <div class="content">
+        <%- post.content %>
+      </div>
         <div class="support-author">
           <p>感谢您的阅读。 🙏
             <a href="https://hufangyun.com/2018/copyright-reprinted/" target="_blank">关于转载请看这里</a>
             <!--<a class="btn-pay"  href="#pay-modal">¥ 打赏支持</a>-->
           </p>
         </div>
-        <!--<div class="like ">
-             <div class="like-button">
-              <a id="like-note" href="">
-                  <i class="icon-heart"></i>  喜欢</a>
-           </div>
-           <span id="likes-count">256</span>
-      </div>-->
-      <div class="otherLink">
+        <!--
+            <div class="like ">
+              <div class="like-button">
+                <a id="like-note" href="">
+                  <i class="icon-heart"></i>喜欢
+                </a>
+              </div>
+              <span id="likes-count">256</span>
+            </div>
+        -->
+        <div class="otherLink">
           <div class="previous">
           </div>
           <div class="next">
           </div>
-      </div>
-      <div class="comment">
+        </div>
+        <div class="comment">
           <%- partial('post/comments') %>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
+   </div>
+</main>
 <div class="footer">
   <div class="info">
     <p>
