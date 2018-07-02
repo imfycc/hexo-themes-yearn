@@ -5,15 +5,13 @@
 
 ## Development plan
 
-Random change the sidebar images
+Change the background of the article page title
 
 ### Demand
 
-Change the background of the article page title
+Random change the sidebar images
 
 every acticle set to meta desc
-
-webpack config optimization
 
 images uploaded to the CDN
 
