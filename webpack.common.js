@@ -46,7 +46,6 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('style/[name].[hash:6].css'),
     new CleanWebpackPlugin(['source/js', 'source/style']),
     new HtmlWebpackPlugin({
       inject: false,

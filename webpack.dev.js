@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   output: {
     filename: 'js/[name].js',
-    },
+  },
   plugins: [
     new ExtractTextPlugin('style/[name].css')
   ],
