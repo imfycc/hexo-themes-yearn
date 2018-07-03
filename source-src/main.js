@@ -1,6 +1,7 @@
 import './main.scss';
 import Trianglify from './trianglify.min.js';
 
+//article page Topbar and title banckground
 const pattern = Trianglify({
   width: window.innerWidth,
   height: 230,
