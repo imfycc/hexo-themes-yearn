@@ -5,9 +5,10 @@
 
 ## Development plan
 
-comments use gitment、gittalk 、livere
 
 ### Demand
+
+liveRe red style => green style
 
 previous posts and next posts
 
