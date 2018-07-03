@@ -425,7 +425,7 @@ h2, h3, h4 {
 }
 
 .container {
-  width: 980px;
+  width: 800px;
   margin: 0 auto;
 }
 .article {
@@ -583,10 +583,6 @@ h2, h3, h4 {
       word-break: normal;
     }
   }
-}
-
-a#changyan_count_unit {
-  color: inherit;
 }
 
 .article .image-caption{
@@ -985,6 +981,12 @@ a#changyan_count_unit {
 
 .article figure.highlight .strong {
   font-weight: bold;
+}
+
+/******* 来必力 liveRe ****/
+
+#container .outline-livere .wf-write-btn, #container .outline-livere .popup-quotation .quotation-wf-group .quotation-wf-right .quotation-write-btn, #container .popup-quotation .quotation-wf-group .quotation-wf-right .outline-livere .quotation-write-btn, #container .outline-livere button.fake-write-btn {
+  background-color: #49be38!important;
 }
 
 /********响应式**********/
