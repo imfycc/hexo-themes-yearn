@@ -19,7 +19,14 @@ const pattern = Trianglify({
 const pageFirstChild = document.querySelector('.navbar-header');
 if (pageFirstChild) {
   document.body.insertBefore(pattern.canvas(), pageFirstChild);
+  deletePatternPlaceholder();
   toggleHeaderNavBar();
+}
+
+function deletePatternPlaceholder() {
+  const patternPlaceholder = document.getElementById('pattern-placeholder');
+  const parent = patternPlaceholder.parentElement;
+  parent.removeChild(patternPlaceholder);
 }
 
 function toggleHeaderNavBar() {
