@@ -407,7 +407,8 @@ h2, h3, h4 {
     }
   }
   .article-info {
-    width: 325px;
+    position: relative;
+    display: inline-block;
     margin: 10px auto;
     li {
       float: left;
@@ -1091,8 +1092,4 @@ h2, h3, h4 {
       }
     }
   }
-}
-
-@media screen and (max-width: 1100px) {
-
 }
