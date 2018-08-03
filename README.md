@@ -1,28 +1,28 @@
-
 ## Preview
 
 [Demo](https://hufangyun.com)
 
 ## Development plan
 
+images uploaded to the CDN. To be completed before 20th
 
 ### Demand
 
-liveRe red style => green style
+test themes for others to use
+
+set the images size markdown to HTML
+
+every acticle set to meta desc
+
+The watermark image automatically
+
+prefetch
 
 previous posts and next posts
 
 PWA
 
-prefetch
-
 Contents https://yanm1ng.github.io/2017/09/10/Day06-%E7%90%86%E8%A7%A3Virtual-DOM%E6%A8%A1%E5%9E%8B/
-
-Random change the sidebar images
-
-every acticle set to meta desc
-
-images uploaded to the CDN
 
 about me
 
@@ -30,15 +30,11 @@ back top
 
 write wiki of themes
 
-test themes for others to use
-
 In the console to introduce my blog
 
 like acticle
 
 search style optimization
-
-The watermark image automatically
 
 article title add the anchor   github.com
 
@@ -59,3 +55,5 @@ Copyright statement
 site visitors
 
 add more animations
+
+Random change the sidebar images
