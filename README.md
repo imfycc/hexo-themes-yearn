@@ -12,6 +12,10 @@ test themes for others to use
 
 set the images size markdown to HTML
 
+compression static files (css)
+
+image automatic compression
+
 every acticle set to meta desc
 
 The watermark image automatically
