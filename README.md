@@ -1,12 +1,60 @@
+# Hexo-themes-yearn
+
+[Yearn](https://github.com/Youthink/hexo-themes-yearn) is the theme for [hexo](https://hexo.io/).Advocate simplicity, elegance and extreme performance.
+
+[中文说明](./README_ZH.md)
+
 ## Preview
 
-[Demo](https://hufangyun.com)
+You can click on my [blog](https://hufangyun.com) to view the results.
 
-## Development plan
+If you want to experience the browsing effect of your mobile phone, you can scan the QR code:
+
+![hexo-themes-yearn QR-code](https://ws4.sinaimg.cn/large/006tNbRwly1fueu6nku1fj307s07sdfl.jpg)
+
+## Setup
+
+```
+$ git clone https://github.com/Youthink/hexo-themes-yearn.git themes/yearn
+```
+
+## Update
+
+```
+cd themes/yearn
+git pull
+```
+
+## Config
+
+## Development
+
+```bash
+cd themes/yearn
+```
+
+Installation depends on and builds development environment
+```bash
+yarn install
+
+yarn dev
+```
+
+Modify the file in `source-src`
+
+build
+
+```
+yarn dist
+```
+
+## Todo
+
+### Development plan
 
 images uploaded to the CDN. To be completed before 20th
 
-### Demand
+#### Demand
 
 test themes for others to use
 
