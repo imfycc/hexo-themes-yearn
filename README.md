@@ -27,6 +27,8 @@ git pull
 
 ## Config
 
+Modify the `_config.yml` file in theme folder
+
 ## Development
 
 ```bash
