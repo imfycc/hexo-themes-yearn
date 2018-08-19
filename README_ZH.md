@@ -8,6 +8,8 @@
 
 如果想体验手机浏览效果，可以扫一下二维码：
 
+![hexo-themes-yearn 预览二维码](https://ws4.sinaimg.cn/large/006tNbRwly1fueu6nku1fj307s07sdfl.jpg)
+
 ## 效果图
 
 补充中...
