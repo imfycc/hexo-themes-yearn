@@ -41,11 +41,6 @@ function toggleHeaderNavBar() {
   });
 }
 
-//http to https
-var host = "hufangyun.com" || "www.hufangyun.com";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-
 // Baidu Analytics
 var _hmt = _hmt || [];
 (function() {
