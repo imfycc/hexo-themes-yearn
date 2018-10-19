@@ -54,23 +54,33 @@ yarn dist
 
 ### Development plan
 
+mobile and PC dynamic processing image size in qiniu cloud
+
+support tag
+
+wiki comment gitTalk
+
 images uploaded to the CDN. To be completed before 20th
-
-#### Demand
-
-test themes for others to use
 
 set the images size markdown to HTML
 
-compression static files (css)
+prefetch
 
 image automatic compression
 
 every acticle set to meta desc
 
-The watermark image automatically
+compression static files (css)
 
-prefetch
+about reprinted font size
+
+#### Demand
+
+bugfix: article page top image size
+
+test themes for others to use
+
+The watermark image automatically
 
 previous posts and next posts
 
@@ -110,4 +120,4 @@ site visitors
 
 add more animations
 
-Random change the sidebar images
+Hovering explain vocabulary
