@@ -46,12 +46,27 @@ yarn install
 yarn dev
 ```
 
+或者
+
+```
+npm install
+
+npm dev
+
+```
+
 修改 `source-src` 内的 `js` 和 `css`
 
 重新打包文件
 
 ```
 yarn dist
+```
+
+或者
+
+```
+npm dist
 ```
 
 

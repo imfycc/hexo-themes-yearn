@@ -41,13 +41,24 @@ yarn install
 
 yarn dev
 ```
+or
 
+```
+npm install
+
+npm dev
+```
 Modify the file in `source-src`
 
 build
 
 ```
 yarn dist
+```
+or
+
+```
+npm dist
 ```
 
 ## Todo
