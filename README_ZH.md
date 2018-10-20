@@ -31,6 +31,10 @@ git pull
 
 修改主题内的 `_config.yml` 文件
 
+### 配置教程
+
+[wiki](https://github.com/Youthink/hexo-themes-yearn/wiki)
+
 ## 开发
 
 进入主题目录

@@ -29,6 +29,8 @@ git pull
 
 Modify the `_config.yml` file in theme folder
 
+[wiki](https://github.com/Youthink/hexo-themes-yearn/wiki)
+
 ## Development
 
 ```bash
