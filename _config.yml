@@ -20,3 +20,8 @@ avatar: https://tva3.sinaimg.cn/crop.0.0.200.200.180/005Kc3C1jw8f2uep0hhkvj305k0
 
 # 展示更新时间
 display_updated: true
+
+# Online contact
+daovoice: true
+daovoice_app_id: 123456 #输入app_id
+

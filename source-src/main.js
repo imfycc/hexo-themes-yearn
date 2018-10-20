@@ -145,10 +145,3 @@ function regtest(raw, regExp) {
   regExp.lastIndex = 0;
   return regExp.test(raw);
 }
-
-// chat tool
-daovoice('init', {
-  app_id: "1ff30348"
-});
-daovoice('update');
-
