@@ -41,15 +41,6 @@ function toggleHeaderNavBar() {
   });
 }
 
-// Baidu Analytics
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?ae46047b557574a12bba544bea130043";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-
 // search
 var searchData;
 var search = document.getElementById('search');
