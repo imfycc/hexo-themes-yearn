@@ -12,7 +12,12 @@
   <link rel="dns-prefetch" href="https://widget-static-cdn.daovoice.io">
   <link rel="dns-prefetch" href="https://im.daovoice.io">
   <% if (theme.baidu_analytics) { %>
-  <link rel="dns-prefetch" href="http://hm.baidu.com/">
+  <link rel="dns-prefetch" href="https://hm.baidu.com/">
+  <% } %>
+  <% if (theme.gitalk) { %>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://api.github.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
   <% } %>
   <%- partial('_partial/css.ejs') %>
 	<link rel="shortcut icon" href="<%= theme.favicon %>" title="Favicon">
