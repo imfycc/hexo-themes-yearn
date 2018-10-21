@@ -30,7 +30,6 @@ baidu_analytics: true
 baidu_analytics_code: awwssw1snsnsnn1ndndnndnd99j
 
 #Comments
-
 # https://github.com/gitalk/gitalk
 gitalk: true
 gitalk_clientID: 8888a8888
@@ -38,4 +37,6 @@ gitalk_clientSecret: 8888886666666
 gitalk_repo: ****.github.io
 gitalk_owner: admin
 gitalk_admin: admin
+# 是否启用评论框的全屏遮罩效果
+gitalk_distractionFreeMode: false
 
