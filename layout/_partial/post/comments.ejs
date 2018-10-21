@@ -1,14 +1,16 @@
+<% if (theme.gitalk) { %>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script type="text/javascript">
   const gitalk = new Gitalk({
-    clientID: '3b064dc018768ed172b8',
-    clientSecret: '403c6f397465f7fa14cfb02668011929102421d1',
-    repo: 'Youthink.github.io',
-    owner: 'Youthink',
-    admin: ['Youthink'],
+    clientID: '<%= theme.gitalk_clientID %>',
+    clientSecret: '<%= theme.gitalk_clientSecret %>',
+    repo: '<%= theme.gitalk_repo %>',
+    owner: '<%= theme.gitalk_owner %>',
+    admin: ['<%= theme.gitalk_admin %>'],
     id: location.pathname,      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
   gitalk.render('comments');
 </script>
+<% } %>
