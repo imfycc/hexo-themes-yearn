@@ -1,6 +1,6 @@
 {
   "name": "VicSugar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a theme for hexo",
   "scripts": {
     "dev": "webpack --config webpack.dev.js",

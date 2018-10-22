@@ -28,6 +28,11 @@ display_updated: true
 # 文章页的关于转载链接
 copyright_url: https://888.com/index.html
 
+# 底部的备案信息等
+
+copyright_date: 2013-2018
+beian_info: 某某的博客 京ICP备xxxxxx号
+
 # Online contact
 daovoice: true
 daovoice_app_id: 123456 #输入app_id
