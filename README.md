@@ -83,8 +83,6 @@ about reprinted font size
 
 bugfix: article page top image size
 
-test themes for others to use
-
 The watermark image automatically
 
 previous posts and next posts
@@ -97,13 +95,9 @@ about me
 
 back top
 
-write wiki of themes
-
 In the console to introduce my blog
 
 like acticle
-
-search style optimization
 
 article title add the anchor   github.com
 
