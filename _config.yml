@@ -13,6 +13,10 @@ subnav:
 
 description: 天马行空，爱生活，爱coding
 
+# SEO
+seo_keywords: hexo,个人博客,blog
+seo_description: 某某的个人博客
+
 favicon: /favicon.ico
 
 #你的头像url
