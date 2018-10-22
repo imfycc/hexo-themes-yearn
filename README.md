@@ -71,14 +71,6 @@ mobile and PC dynamic processing image size in qiniu cloud
 
 support tag
 
-wiki comment gitTalk
-
-images uploaded to the CDN. To be completed before 20th
-
-set the images size markdown to HTML
-
-prefetch
-
 image automatic compression
 
 every acticle set to meta desc
