@@ -22,6 +22,17 @@ favicon: /favicon.ico
 #你的头像url
 avatar: https://tva3.sinaimg.cn/crop.0.0.200.200.180/005Kc3C1jw8f2uep0hhkvj305k05k3yk.jpg
 
+# 首页左侧边栏背景图片
+# 可配置多个 随机挑选一张
+leftBackground:
+  - https://ws3.sinaimg.cn/large/006tKfTcly1fsulzlvofnj30af0k5jvu.jpg
+  - https://ws2.sinaimg.cn/large/006tNbRwly1fwl2alhqibj31kw2dcu0y.jpg
+  - https://ws1.sinaimg.cn/large/006tNbRwly1fwl2bclcirj31kw2czk7v.jpg
+  - https://ws3.sinaimg.cn/large/006tNbRwly1fwl2c765jej31kw2d1npe.jpg
+  - https://ws3.sinaimg.cn/large/006tNbRwly1fwl2dentnvj31kw2dc1l2.jpg
+  - https://ws4.sinaimg.cn/large/006tNbRwly1fwl2dqawiej31kw2d8x6p.jpg
+  - https://ws3.sinaimg.cn/large/006tNbRwly1fwl2f7yp25j31kw3a97wh.jpg
+
 # 展示更新时间
 display_updated: true
 

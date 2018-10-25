@@ -73,6 +73,15 @@
         </div>
     </div>
 </div>
+<script>
+  var homeLeftBgArr = '<%- theme.leftBackground %>'.split(',');
+  var homeLeftBgArrLen = homeLeftBgArr.length;
+  var leftBackgroundUrl = homeLeftBgArr[Math.floor(Math.random() * homeLeftBgArrLen)];
+  var homeLeftAsideNode = document.getElementsByClassName('left-aside')[0];
+  if (homeLeftAsideNode) {
+    homeLeftAsideNode.style.backgroundImage = 'url(' + leftBackgroundUrl + ')';
+  }
+</script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </script>
 <%- partial('_partial/script.ejs') %>
