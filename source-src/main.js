@@ -2,26 +2,37 @@ import './main.scss';
 import Trianglify from './trianglify.min.js';
 
 //article page Topbar and title banckground
-const pattern = Trianglify({
-  width: window.innerWidth,
-  height: 230,
-  variance: 0.56,
-  cell_size: 46,
-  x_colors: 'random',
-  y_colors: 'match_x',
-  palette: Trianglify.colorbrewer,
-  color_space: 'lab',
-  color_function: false,
-  stroke_width: 1.2,
-  seed: window.location.href
-});
+function pattern(width = window.innerWidth) {
+  return Trianglify({
+    width,
+    height: 230,
+    variance: 0.56,
+    cell_size: 46,
+    x_colors: 'random',
+    y_colors: 'match_x',
+    palette: Trianglify.colorbrewer,
+    color_space: 'lab',
+    color_function: false,
+    stroke_width: 1.2,
+    seed: window.location.href
+  });
+}
 
 const pageFirstChild = document.querySelector('.navbar-header');
 if (pageFirstChild) {
-  document.body.insertBefore(pattern.canvas(), pageFirstChild);
+  document.body.insertBefore(pattern().canvas(), pageFirstChild);
   deletePatternPlaceholder();
   toggleHeaderNavBar();
 }
+
+window.addEventListener('resize', function() {
+  const bodyFirstElement = document.body.firstElementChild
+  const firstElementTagName = bodyFirstElement.tagName;
+  if (firstElementTagName === 'CANVAS') {
+    document.body.removeChild(bodyFirstElement);
+    document.body.insertBefore(pattern().canvas(), pageFirstChild);
+  }
+});
 
 function deletePatternPlaceholder() {
   const patternPlaceholder = document.getElementById('pattern-placeholder');

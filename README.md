@@ -81,8 +81,6 @@ about reprinted font size
 
 #### Demand
 
-bugfix: article page top image size
-
 The watermark image automatically
 
 previous posts and next posts
