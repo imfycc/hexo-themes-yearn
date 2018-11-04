@@ -67,49 +67,52 @@ npm dist
 
 ### Development plan
 
-mobile and PC dynamic processing image size in qiniu cloud
-
 support tag
-
-image automatic compression
-
-every acticle set to meta desc
-
-compression static files (css)
-
-about reprinted font size
 
 #### Demand
 
+to optimize the search input style
+
+index home left slide can folding, topbar fullscreen, navigation and article center
+
+image automatic compression
+
+mobile and PC dynamic processing image size in qiniu cloud
+
 The watermark image automatically
 
-previous posts and next posts
-
 PWA
-
-Contents https://yanm1ng.github.io/2017/09/10/Day06-%E7%90%86%E8%A7%A3Virtual-DOM%E6%A8%A1%E5%9E%8B/
 
 about me
 
 back top
 
-In the console to introduce my blog
-
-like acticle
-
-article title add the anchor   github.com
+Contents https://yanm1ng.github.io/2017/09/10/Day06-%E7%90%86%E8%A7%A3Virtual-DOM%E6%A8%A1%E5%9E%8B/
 
 set to ban climb some of the page the search engine
-
 http://chenhuichao.com/2018/04/16/seo/seo-in-station-optimization/
+
+The article recommended
+
+Hovering explain vocabulary
+
+##### Submit daily
+
+every acticle set to meta desc
+
+about reprinted font size
+
+compression static files (css)
+
+previous posts and next posts
+
+In the console to introduce my blog
+
+article title add the anchor   github.com
 
 juejin badge
 
 The article set-top
-
-The article recommended
-
-The article page at the bottom of the label
 
 Copyright statement
 
@@ -117,4 +120,3 @@ site visitors
 
 add more animations
 
-Hovering explain vocabulary
