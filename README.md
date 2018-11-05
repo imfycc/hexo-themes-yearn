@@ -67,13 +67,15 @@ npm dist
 
 ### Development plan
 
-support tag
+index home left slide can folding, topbar fullscreen, navigation and article center
 
-#### Demand
+support tag
 
 to optimize the search input style
 
-index home left slide can folding, topbar fullscreen, navigation and article center
+#### Demand
+
+use rem
 
 image automatic compression
 
