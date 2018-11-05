@@ -1,4 +1,5 @@
 import './main.scss';
+import './iconfont.js';
 import Trianglify from './trianglify.min.js';
 
 //article page Topbar and title banckground
