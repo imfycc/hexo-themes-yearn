@@ -979,6 +979,10 @@ h2, h3, h4 {
   font-weight: bold;
 }
 
+.article figure.highlight .gutter {
+  width: 10px;
+}
+
 /********响应式**********/
 
 @media screen and (max-width: 768px) {
