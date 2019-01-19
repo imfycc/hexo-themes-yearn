@@ -25,6 +25,12 @@ cd themes/yearn
 git pull
 ```
 
+## Recently
+
+ * add console eggs
+
+[more](https://github.com/Youthink/hexo-themes-yearn/releases)
+
 ## Config
 
 Modify the `_config.yml` file in theme folder

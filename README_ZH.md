@@ -14,6 +14,12 @@
 
 补充中...
 
+## 新增功能
+
+* 浏览器 console 彩蛋
+
+[更多](https://github.com/Youthink/hexo-themes-yearn/releases)
+
 ## 安装
 
 ```
