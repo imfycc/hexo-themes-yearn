@@ -765,6 +765,9 @@ h2, h3, h4 {
 .article figure.highlight .strong {
   font-weight: bold; }
 
+.article figure.highlight .gutter {
+  width: 10px; }
+
 /********响应式**********/
 @media screen and (max-width: 768px) {
   /***header 左侧边栏 ****/
