@@ -71,6 +71,14 @@ support tag
 
 #### Demand
 
+article page bg text color
+
+support more article styles
+
+https://yfzhou.coding.me/2018/08/27/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%89/
+
+https://www.zhangxinxu.com/wordpress/2018/11/css-background-color-font-auto-match/
+
 to optimize the search input style
 
 index home left slide can folding, topbar fullscreen, navigation and article center
@@ -96,6 +104,10 @@ The article recommended
 
 Hovering explain vocabulary
 
+提醒: 本文最后更新于 424 天前，文中所描述的信息可能已发生改变，请谨慎使用。
+
+超过指定时间出现这样的提示
+
 ##### Submit daily
 
 every acticle set to meta desc
@@ -105,8 +117,6 @@ about reprinted font size
 compression static files (css)
 
 previous posts and next posts
-
-In the console to introduce my blog
 
 article title add the anchor   github.com
 
