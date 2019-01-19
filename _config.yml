@@ -61,3 +61,13 @@ gitalk_admin: admin
 # 是否启用评论框的全屏遮罩效果
 gitalk_distractionFreeMode: false
 
+# Console
+console: true
+console_color: '#6190e8'
+console_config:
+  - '\n欢迎访问 https://hufangyun.com ，围观小猿大圣的博客(づ｡◕‿‿◕｡)づ！\n'
+  - '\n本博客使用 %cHexo%c 搭建，博客主题为小猿大圣开发的 %chexo-themes-yearn%c ~~~ 🎉🎉🎉 \n\n源码 https://github.com/Youthink/hexo-themes-yearn \n\n如果喜欢可以 star 支持一下 ❤️~\n'
+  - '\n扫描下面的二维码，在手机上查看博客！\n'
+  - 'https://static.hufangyun.com/blog-url-qrcode-180-180.png'
+  - '\n 想知道这个效果如何实现的？博客内搜索 console 彩蛋 🚀 ！\n'
+
