@@ -16,6 +16,7 @@
 
 ## 新增功能
 
+* 文章长期未更新显示提醒
 * 浏览器 console 彩蛋
 
 [更多](https://github.com/Youthink/hexo-themes-yearn/releases)
