@@ -147,3 +147,15 @@ function regtest(raw, regExp) {
   regExp.lastIndex = 0;
   return regExp.test(raw);
 }
+
+
+// 显示文章长时间未更新提醒
+var overdueRemindDom = document.querySelector('.overdue-remind');
+var overdueRemindText = overdueRemindDom.textContent;
+var postUpdateDate = document.querySelector("time[itemprop='dateUpdated']").textContent;
+var now = Date.parse(new Date());
+var postLastTime = Date.parse(postUpdateDate);
+var dayNum = parseInt((now - postLastTime) / (1000 * 60 * 60 * 24));
+
+overdueRemindDom.innerHTML = overdueRemindText.replace(/\$day/, '<span> ' + dayNum + ' </span>');
+

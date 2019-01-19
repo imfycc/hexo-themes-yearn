@@ -24,6 +24,11 @@
   <div class="container">
     <div class="article">
       <div class="content">
+        <% if ((theme.overdue_auto_all || post.overdue) && theme.overdue_remind) { %>
+        <div class="overdue-remind">
+          <%= theme.overdue_remind %>
+        </div>
+        <% } %>
         <%- post.content %>
       </div>
         <div class="support-author">

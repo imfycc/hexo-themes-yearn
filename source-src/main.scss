@@ -500,10 +500,11 @@ h2, h3, h4 {
   }
 
   blockquote {
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 20px 0;
     background-color: #F6F6F6;
-    border-left: 2px solid #49be38;
+    border-left: 3px solid #49be38;
+    border-radius: 3px;
     word-break: break-word;
 
     p {
@@ -526,6 +527,18 @@ h2, h3, h4 {
   }
 
   .content {
+    .overdue-remind {
+      background-color: #fdf8ea;
+      border-left: 3px solid #f0ad4e;
+      padding: 15px 20px;
+      margin: 20px auto;
+      border-radius: 3px;
+      font-weight: 500;
+      span {
+        color: crimson;
+        font-weight: bold;
+      }
+    }
     a {
        color: #49be38;
        border-bottom: 1px solid #49be38;
@@ -614,13 +627,14 @@ h2, h3, h4 {
 }
 
 .article .support-author {
-	padding: 25px;
-	margin-bottom: 40px;
-	background-color: whitesmoke;
-	border-left: 4px solid #49be38;
-	box-sizing: border-box;
-	box-shadow: 0 0 1px #d9d9d9;
-	margin:50px auto;
+  padding: 25px;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  border-left: 4px solid #49be38;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 0 1px #d9d9d9;
+  margin:50px auto;
 }
 .article .support-author p{
 	margin: 0 auto 10px;
