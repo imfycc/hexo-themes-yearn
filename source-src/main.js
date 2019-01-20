@@ -151,11 +151,13 @@ function regtest(raw, regExp) {
 
 // 显示文章长时间未更新提醒
 var overdueRemindDom = document.querySelector('.overdue-remind');
-var overdueRemindText = overdueRemindDom.textContent;
-var postUpdateDate = document.querySelector("time[itemprop='dateUpdated']").textContent;
-var now = Date.parse(new Date());
-var postLastTime = Date.parse(postUpdateDate);
-var dayNum = parseInt((now - postLastTime) / (1000 * 60 * 60 * 24));
-
-overdueRemindDom.innerHTML = overdueRemindText.replace(/\$day/, '<span> ' + dayNum + ' </span>');
+var overdueRemindText = overdueRemindDom && overdueRemindDom.textContent;
+var postUpdateDateDom = document.querySelector("time[itemprop='dateUpdated']");
+var postUpdateDate = postUpdateDateDom && postUpdateDateDom.textContent;
+if (overdueRemindText && overdueRemindDom) {
+  var now = Date.parse(new Date());
+  var postLastTime = Date.parse(postUpdateDate);
+  var dayNum = parseInt((now - postLastTime) / (1000 * 60 * 60 * 24));
+  overdueRemindDom.innerHTML = overdueRemindText.replace(/\$day/, '<span> ' + dayNum + ' </span>');
+}
 
