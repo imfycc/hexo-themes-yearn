@@ -39,6 +39,16 @@ h2, h3, h4 {
 .left {
   float: left; }
 
+svg.icon {
+  width: 20px;
+  height: 20px; }
+  svg.icon.icon-menu {
+    float: left;
+    margin-top: 21px;
+    margin-left: -35px; }
+  svg.icon.icon-search {
+    margin-top: 10px; }
+
 /*************** index *******************/
 .left-aside {
   width: 256px;
@@ -128,24 +138,27 @@ h2, h3, h4 {
         font-weight: bold; }
 
 .search {
-  float: left;
+  float: right;
   color: #717171;
   line-height: 40px;
-  margin-left: 30%;
+  right: 395px;
   position: relative; }
+  .search .search-box {
+    display: none;
+    margin-right: 50px; }
   .search .input-search {
     margin: 8px -31px 0  0;
     border-radius: 2em;
     padding: 7px;
     border: 1px solid #cccccc;
-    width: 200px; }
+    width: 300px; }
   .search input:focus {
     outline: none; }
   .search .search-result-box {
     position: absolute;
     top: 45px;
     top: 45px;
-    left: -60%;
+    left: -17%;
     width: 400px;
     max-height: 400px;
     overflow-y: scroll;
@@ -847,3 +860,5 @@ h2, h3, h4 {
       transition: All ease-in-out 0.4s; }
   .navbar-header.fixed-header .blog-title {
     display: none; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS9tYWluLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

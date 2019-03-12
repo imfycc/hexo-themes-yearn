@@ -64,7 +64,7 @@ svg.icon {
     margin-left: -35px;
   }
   &.icon-search {
-    margin-top: 21px;
+    margin-top: 10px;
   }
 }
 
@@ -185,18 +185,23 @@ svg.icon {
 }
 
 .search {
-  float: left;
+  float: right;
   color: #717171;
   line-height: 40px;
-  margin-left: 30%;
+  right: 395px;
   position: relative;
+
+  .search-box {
+    display: none;
+    margin-right: 50px;
+  }
 
   .input-search {
     margin: 8px -31px 0  0;
     border-radius: 2em;
     padding: 7px;
     border: 1px solid #cccccc;
-    width: 200px;
+    width: 300px;
   }
 
   input {
@@ -209,7 +214,7 @@ svg.icon {
     position: absolute;
     top: 45px;
     top: 45px;
-    left: -60%;
+    left: -17%;
     width: 400px;
     max-height: 400px;
     overflow-y: scroll;

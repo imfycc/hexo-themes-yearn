@@ -52,6 +52,10 @@ function toggleHeaderNavBar() {
   });
 }
 
+function hiddenSearchResultBox() {
+  document.querySelector('.search-result-box').style.display = 'none';
+}
+
 // search
 var searchData;
 var search = document.getElementById('search');
@@ -60,6 +64,7 @@ if(search) {
   search.addEventListener('input', function(e) {
     var key = this.value.trim();
     if (!key) {
+      hiddenSearchResultBox();
       return;
     }
 
@@ -108,7 +113,7 @@ function loadData(success) {
 
 function render(data) {
   var html = '';
-  if (data.length) {
+  if (data.length > 0) {
 
     html = data.map(function (post, i) {
         if (i == 0) {
@@ -122,6 +127,10 @@ function render(data) {
     }
     var result = document.getElementById('search-result');
     result.innerHTML = html.join('');
+    return;
+  }
+  if (!data || data.length <= 0) {
+    hiddenSearchResultBox();
   }
 }
 
@@ -160,4 +169,19 @@ if (overdueRemindText && overdueRemindDom) {
   var dayNum = parseInt((now - postLastTime) / (1000 * 60 * 60 * 24));
   overdueRemindDom.innerHTML = overdueRemindText.replace(/\$day/, '<span> ' + dayNum + ' </span>');
 }
+
+var navSearch = document.getElementById('nav-search');
+var searchBox = document.querySelector('.search-box');
+navSearch.addEventListener('mouseover', () => {
+  navSearch.style.display = 'none';
+  if (searchBox) { searchBox.style.display = 'block';}
+  search.focus();
+});
+
+search.addEventListener('blur', (event) => {
+  navSearch.style.display = 'block';
+  if (searchBox) { searchBox.style.display = 'none';};
+  search.value = '';
+  hiddenSearchResultBox();
+});
 
