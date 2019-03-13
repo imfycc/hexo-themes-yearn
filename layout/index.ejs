@@ -19,27 +19,30 @@
 <div class="right-aside">
     <div class="right-nav ms">
         <div class="main">
-            <ul class="left">
-                <% for (var i in theme.menu){ %>
-                <li>
-                    <a href="<%- url_for(theme.menu[i]) %>">
-                        <%= i %>
-                    </a>
-                </li>
-                <% } %>
-            </ul>
-            <div class="search">
-              <div class="search-box">
-                <input type="search"  id="search" class="input-search" placeholder="搜索">
-                <i class="icon-search"></i>
-                <div class="search-result-box">
-                  <ul id="search-result"></ul>
-                </div>
+          <svg id="nav-menu" class="icon icon-menu" aria-hidden="true">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+          <ul class="left">
+              <% for (var i in theme.menu){ %>
+              <li>
+                  <a href="<%- url_for(theme.menu[i]) %>">
+                      <%= i %>
+                  </a>
+              </li>
+              <% } %>
+          </ul>
+          <div class="search">
+            <div class="search-box">
+              <input type="search"  id="search" class="input-search" placeholder="搜索">
+              <i class="icon-search"></i>
+              <div class="search-result-box">
+                <ul id="search-result"></ul>
               </div>
-              <svg id="nav-search" class="icon icon-search" aria-hidden="true">
-                <use xlink:href="#icon-search"></use>
-              </svg>
             </div>
+            <svg id="nav-search" class="icon icon-search" aria-hidden="true">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </div>
         </div>
     </div>
     <div class="right-main">
